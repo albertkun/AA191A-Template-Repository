@@ -2,8 +2,17 @@
     background: #2774ae !important;
 }
 
-/* :root {
-    --md-primary-fg-color:        #2774ae;
-    --md-primary-fg-color--light: #2774ae;
-    --md-primary-fg-color--dark:  #2774ae;
-  } */
+.md-typeset a{
+    color:#2774ae
+}
+[data-md-color-scheme="slate"] {
+    --md-hue: 265; /* [0, 360] */
+  }
+
+:root {
+    --md-primary-bg-color:        #2774ae;
+
+  }
+  :root > * {
+    --md-code-bg-color:#2774ae;
+}
