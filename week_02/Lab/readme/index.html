@@ -1,0 +1,4033 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        
+      
+      <link rel="icon" href="../../../etc/media/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.8+insiders-4.6.1">
+    
+    
+      
+        <title>Lab 2: Hello World (of HTML, Javascript, CSS, and Leaflet mapping!) - Asian American Studies 191A Course Material</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.bfcc4ef8.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+      <link rel="preload" as="style" href="../../../assets/stylesheets/vendor/mermaid.d607d465.min.css">
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial:300,400,400i,700%7C&display=fallback">
+        <style>:root{--md-text-font:"Arial";--md-code-font:""}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../etc/css/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="">
+  
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#lab-2-hello-world-of-html-javascript-css-and-leaflet-mapping" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Asian American Studies 191A Course Material" class="md-header__button md-logo" aria-label="Asian American Studies 191A Course Material" data-md-component="logo">
+      
+  <img src="../../../etc/media/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Asian American Studies 191A Course Material
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lab 2: Hello World (of HTML, Javascript, CSS, and Leaflet mapping!)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="white"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/albertkun/AA191A-Template-Repository/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+
+
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Guides/git_cloning/" class="md-tabs__link">
+          
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_01/1_pre_lab_1/" class="md-tabs__link">
+          
+  
+  Week 01
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+      
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../readme/" class="md-tabs__link md-tabs__link--active">
+          
+  
+  Week 02
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_03/readme/" class="md-tabs__link">
+          
+  
+  Week 03
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_04/readme/" class="md-tabs__link">
+          
+  
+  Week 04
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_05/readme/" class="md-tabs__link">
+          
+  
+  Week 05
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_06/readme/" class="md-tabs__link">
+          
+  
+  Week 06
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_07/readme/" class="md-tabs__link">
+          
+  
+  Week 07
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_08/readme/" class="md-tabs__link">
+          
+  
+  Week 08
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_09/readme/" class="md-tabs__link">
+          
+  
+  Week 09
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_10/readme/" class="md-tabs__link">
+          
+  
+  Week 10
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Asian American Studies 191A Course Material" class="md-nav__button md-logo" aria-label="Asian American Studies 191A Course Material" data-md-component="logo">
+      
+  <img src="../../../etc/media/favicon.png" alt="logo">
+
+    </a>
+    Asian American Studies 191A Course Material
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/albertkun/AA191A-Template-Repository/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          
+  
+  <span class="md-ellipsis">
+    Guides
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/git_cloning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide for cloning
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/git_commit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide for using Git Commit in VS Code
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/git_creating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide for creating a repository
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/git_fetch_remote_upstream/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Updating the Lab Assignment repo
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/git_forking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide for forking
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/github_sign_up/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide for signing up to GitHub
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/gitscm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide for installing Git SCM
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/live_share/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quickstart for Live Share
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How-To Guides
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/submit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Submit Lab Assignment pages:
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/thinking_caps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Submit a Thinking Cap Discussion
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          
+  
+  <span class="md-ellipsis">
+    Week 01
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 01" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Week 01
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/1_pre_lab_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-Lab: Week 1
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/2_thinking_cap_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Thinking cap #1
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/3_group_project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Due Thursday 4/8:
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/a_optional_gis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to GIS
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 1 - GIS, Data, and Ethics
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_6">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/Lab/Lab1_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab 1.2 "Hello World!" QGIS Bootcamp
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/Lab/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GITing started with Spatial Data Sets
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_7" type="checkbox" id="__nav_3_7" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_7">
+          
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Materials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          Materials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/Materials/1_pre_lab_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-Lab: Week 1
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/Materials/2_thinking_cap_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Thinking cap #1
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/Materials/a_optional_gis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to GIS
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          
+  
+  <span class="md-ellipsis">
+    Week 02
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 02" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Week 02
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 2 - Humanizing Technology
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_2">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extra
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Lab 2: Hello World (of HTML, Javascript, CSS, and Leaflet mapping!)
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Lab 2: Hello World (of HTML, Javascript, CSS, and Leaflet mapping!)
+  </span>
+
+      </a>
+      
+        <!--
+  Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<nav class="md-nav md-nav--secondary " aria-label="Table of contents">
+
+  
+  
+  
+    
+  
+
+  <!-- Render item list -->
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lets-get-vs-coding" class="md-nav__link">
+    Let's get VS Coding!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#html-oh-what-taggony" class="md-nav__link">
+    HTML?! Oh what taggony!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cool-stylin-sheets" class="md-nav__link">
+    Cool Stylin' Sheets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#javascript" class="md-nav__link">
+    JavaScript
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hello-leaflet-finally" class="md-nav__link">
+    Hello Leaflet... Finally..
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-github-pages" class="md-nav__link">
+    Using GitHub Pages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-geojson-file" class="md-nav__link">
+    Adding a GeoJSON file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-power-of-web-mapping" class="md-nav__link">
+    The power of web mapping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-assignment-map-portfolio" class="md-nav__link">
+    Lab Assignment - Map Portfolio:
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3">
+          
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Materials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Materials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Materials/group_assigment_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Group Assignment #2: Memo
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Materials/lab_assignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab Assignment - Map Portfolio:
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Materials/pre-lab/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-Lab: Week 2
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          
+  
+  <span class="md-ellipsis">
+    Week 03
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 03" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Week 03
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_03/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 3 - Open Source and Web Mapping
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_2">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_03/Lab/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JavaScript FUNctions
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_3">
+          
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Materials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Materials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_03/Materials/extra_credit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extra Credit Assignment due 4/22
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_03/Materials/lab_assignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab assignment
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_03/Materials/pre-lab/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre lab
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          
+  
+  <span class="md-ellipsis">
+    Week 04
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 04" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Week 04
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_04/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 4 - Developing for Civil Society
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6_2">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_04/Lab/extra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extra
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_04/Lab/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meaningful Survey Design
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6_3">
+          
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Materials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Materials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_04/Materials/Group_Assignment_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Survey
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_04/Materials/pre-lab/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre lab
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          
+  
+  <span class="md-ellipsis">
+    Week 05
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 05" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Week 05
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_05/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 5 - Society, Technology, and Ethics
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_2" type="checkbox" id="__nav_7_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_2">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_05/Lab/lab_assignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab assignment
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_05/Lab/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loops and APIs
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_3" type="checkbox" id="__nav_7_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_3">
+          
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Materials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_3">
+          <span class="md-nav__icon md-icon"></span>
+          Materials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_05/Materials/extra_reading_response/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extra Reading Response
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_05/Materials/group_assignment_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Survey Diagram and Wireframe
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          
+  
+  <span class="md-ellipsis">
+    Week 06
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 06" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Week 06
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_06/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 6 - Human-Centered Design
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_2" type="checkbox" id="__nav_8_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_2">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_06/Lab/lab_assignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab Assignment #5 - CSS Grid Layouts
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_06/Lab/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design DeCSSions
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_3" type="checkbox" id="__nav_8_3" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_3">
+          
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Materials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_3">
+          <span class="md-nav__icon md-icon"></span>
+          Materials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_06/Materials/pre-lab/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-lab
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          
+  
+  <span class="md-ellipsis">
+    Week 07
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 07" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Week 07
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_07/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 7 - From Design to Data Justice
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_2" type="checkbox" id="__nav_9_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9_2">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_9_2">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_07/Lab/lab_assignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab Assignment #6 - Conditional Visual Importance
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_07/Lab/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Map Layers and Visual Design
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          
+  
+  <span class="md-ellipsis">
+    Week 08
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 08" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Week 08
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_08/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 8 - Collaboration and mentoring for social change
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10_2">
+          
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Materials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_2">
+          <span class="md-nav__icon md-icon"></span>
+          Materials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_08/Materials/groupassignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Group Assignment #5 - Rough Draft
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_08/Materials/pre-lab/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre lab
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3" type="checkbox" id="__nav_10_3" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10_3">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_3">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_08/lab/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collaborating with GitHub and Plugins
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_11">
+          
+  
+  <span class="md-ellipsis">
+    Week 09
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 09" data-md-level="1">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          Week 09
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_09/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 9 - Connecting Activism, Technology, and Social Change
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_12">
+          
+  
+  <span class="md-ellipsis">
+    Week 10
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 10" data-md-level="1">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
+          Week 10
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_10/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 10 - Beyond Web Development and GIS for Social Change
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_2" type="checkbox" id="__nav_12_2" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_12_2">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_12_2">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_10/Lab/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Final Finishing Touches
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/albertkun/AA191A-Template-Repository/edit/dev/docs/week_02/Lab/readme.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+  
+
+
+
+<h1 id="lab-2-hello-world-of-html-javascript-css-and-leaflet-mapping">Lab 2: Hello World (of HTML, Javascript, CSS, and Leaflet mapping!)<a class="headerlink" href="#lab-2-hello-world-of-html-javascript-css-and-leaflet-mapping" title="Permanent link">&para;</a></h1>
+<h3 id="objectives">Objectives:<a class="headerlink" href="#objectives" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Create a basic webpage </li>
+<li>Add a Leaflet map</li>
+<li>Add GeoJSON data to the map</li>
+<li>Create a GeoJSON online</li>
+</ul>
+<p>This lab will walk you through the process of creating a static web page in HTML with some additional style elements using CSS. Then you will be tasked to add a map using the <a href="leafletjs.com/">Leaflet JS library</a> and host it using GitHub pages.</p>
+<blockquote>
+<p>Note: I highly recommend checking out the <a href="https://leafletjs.com/reference-1.7.1.html">Leaflet  documentation</a>. Looking at any documentation before choosing any software is important, because badly documented libraries can make tools difficult to use. </p>
+</blockquote>
+<h2 id="lets-get-vs-coding">Let&rsquo;s get VS Coding!<a class="headerlink" href="#lets-get-vs-coding" title="Permanent link">&para;</a></h2>
+<p>Start up VS Code and open your Assignments repo:
+<img alt="" src="../media/assignments_open.png" /></p>
+<p>Remember to select the correct folder!
+<img alt="" src="../media/assignments_folder.png" /></p>
+<p>Make sure Explorer is open in the activity bar by clicking on it:</p>
+<p><img alt="" src="../media/explorer_open.png" /></p>
+<p>Click on <code>Week_02</code> <span style="background-color:red"><strong>(1)</strong></span> and then the <code>new file</code> button <span style="background-color:red"><strong>(2)</strong></span>:
+  <img alt="" src="../media/new_file.png" /> </p>
+<h2 id="html-oh-what-taggony">HTML?! Oh what <code>tag</code>gony!<a class="headerlink" href="#html-oh-what-taggony" title="Permanent link">&para;</a></h2>
+<p>HTML is what makes up the house for websites to be able to  talk to the server. Everything in HTML is surrounded by tags which look like this:
+<code>&lt;tag&gt; Look Ma'! I'm in a tag! &lt;/tag&gt;</code></p>
+<h3 id="21-attributes-in-tags">2.1 Attributes in tags<a class="headerlink" href="#21-attributes-in-tags" title="Permanent link">&para;</a></h3>
+<p>If we can only use tags, the web would be a pretty boring place. So in order to make each tag unique, we can add attributes to them. To do so, you add an <code>attribute="some value"</code></p>
+<p>For example, we can name a tag something:
+<code>&lt;tag name="Albert"&gt;&lt;/tag&gt;</code></p>
+<p>Wow, that&rsquo;s my name tag!</p>
+<h3 id="22-boilerplate-vs-template-code">2.2 Boilerplate vs. Template Code<a class="headerlink" href="#22-boilerplate-vs-template-code" title="Permanent link">&para;</a></h3>
+<p>In coding, boilerplate code is ready to use code that people can freely copy and use with no changes. Think of them as ready-to-eat microwave dinners.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>Template code refers to sample code that can be copied and pasted, but requires modifications in order for it to work.</p>
+<p>Here is our template code:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Hello World with Leaflet<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;shortcut icon&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>
+
+        <span class="cm">&lt;!-- I&#39;d add some style if here if I had any --&gt;</span>
+
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+            Hello World!
+        <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;main&quot;</span><span class="p">&gt;</span>
+        <span class="cm">&lt;!-- hint: majority of your lab assignment can go here     --&gt;</span>
+
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;footer&quot;</span><span class="p">&gt;</span>
+Copyright(2021)
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<blockquote>
+<p>What do you observe in the code? 
+1. How does this code differ from the boilerplate code?
+2. Why should everything be enclosed in the <code>html</code> tag?
+3. Do empty spaces matter in HTML?
+4. What is a comment and how do you write one?
+5. Is there a difference between the <code>class</code> and <code>id</code> attributes?</p>
+</blockquote>
+<h3 id="in-class-exercise-1">In-Class Exercise #1<a class="headerlink" href="#in-class-exercise-1" title="Permanent link">&para;</a></h3>
+<p>Let&rsquo;s fix our code so that it actually looks presentable. Look for the errors in the template code.</p>
+<p>Save the file and name it <code>index.html</code> and open it in Firefox.</p>
+<h3 id="preview-our-file">Preview our file<a class="headerlink" href="#preview-our-file" title="Permanent link">&para;</a></h3>
+<p>Make sure you have the Live Server extension installed:
+<a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer</a></p>
+<p>Click on Go Live!
+<img alt="" src="../media/go_live.png" /></p>
+<p>Your default browser should automatically pop-up, if it is not Firefox, you will need to copy and paste the link over.</p>
+<p><img alt="" src="../media/live_preview.png" /></p>
+<p>Alternatively: Right click on your <code>index.html</code> file and <code>reveal in file explorer</code>. Then, double click on the file.</p>
+<h2 id="cool-stylin-sheets">Cool Stylin&rsquo; Sheets<a class="headerlink" href="#cool-stylin-sheets" title="Permanent link">&para;</a></h2>
+<p>Let&rsquo;s add some Cascading Style Sheets (CSS) to visualize our page better.</p>
+<p>Insert the following code in the <code>&lt;head&gt;</code> right before the closing tag (i.e. <code>&lt;/head&gt;</code>):</p>
+<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">html</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">azure</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+What happened to the page?</p>
+<p>That&rsquo;s cool! But this way of using CSS, called inline CSS, can make your HTML file long and cumbersome. So it&rsquo;s usually better to have a separate file for CSS and bring that whole file in as a linked source.</p>
+<h3 id="adding-linked-css">Adding linked CSS<a class="headerlink" href="#adding-linked-css" title="Permanent link">&para;</a></h3>
+<p>Click the new folder button:</p>
+<p><img alt="" src="../media/new_folder.png" /></p>
+<p>Highlight the <code>style</code> folder by clicking on it:</p>
+<p><img alt="" src="../media/new_file_2.png" /></p>
+<p>Then click on the <code>new file</code> button file:</p>
+<p><img alt="" src="../media/new_file_3.png" /></p>
+<p>Name the file <code>style.css</code>:</p>
+<p><img alt="" src="../media/style_css.png" /></p>
+<p>Double click to open the new file. Then copy and paste the following CSS:</p>
+<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>html, body {
+    padding: 5px;
+ }
+
+ body {
+     display: grid;
+     grid-template-rows: .1fr .30fr .60fr .05fr;
+     grid-template-columns: 1fr;
+     grid-template-areas: &quot;header&quot; &quot;main&quot; &quot;map&quot;  &quot;footer&quot;;
+     justify-content: center;
+ }
+
+ header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: .2fr .6fr .2fr;
+    justify-content: center;
+ }
+
+.main {
+    display: grid;
+    grid-area: main;
+    background-color: aqua;
+}
+
+#map {
+    grid-area: map;
+    height: 40vh;
+}
+
+#footer {
+    grid-area: footer;
+}
+</code></pre></div>
+</td></tr></table>
+Remember to save the <code>style.css</code>!</p>
+<p>Next go back to the <code>index.html</code> file and replace your entire <code>&lt;style&gt; &lt;/style&gt;</code> content and tags with this code:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;style/style.css&quot;&gt;
+</code></pre></div>
+</td></tr></table></p>
+<p>What this code does is that it tells the HTML file to use all of the css in the <code>href</code> attribute.</p>
+<h4 id="note-you-can-have-as-many-external-references-as-youd-like-as-long-as-you-link-them-in-this-way">Note: You can have as many external references as you&rsquo;d like, as long as you link them in this way.<a class="headerlink" href="#note-you-can-have-as-many-external-references-as-youd-like-as-long-as-you-link-them-in-this-way" title="Permanent link">&para;</a></h4>
+<p>We will go into CSS in more detail later, but what you need to know is that CSS has <code>selectors</code> which are then followed by the styles in <code>{ }</code>.</p>
+<h2 id="javascript">JavaScript<a class="headerlink" href="#javascript" title="Permanent link">&para;</a></h2>
+<p>JavaScript makes sure our page knows how to function and react. There are different frameworks for JavaScript, like React.js and vue.js, but this class will be focusing on vanilla JavaScript with ES7+ standards. All JavaScript must be contained within a script tag. In our <code>&lt;head&gt;</code> tag, let&rsquo;s add a <code>&lt;script&gt;&lt;/script&gt;</code> tag.</p>
+<p>Sometimes it also becomes important to put JavaScript in the footer tag, why is that? Sometimes you need JavaScript functions to run after the body loads, so putting <code>&lt;script&gt;</code> after the <code>&lt;/body&gt;</code> becomes necessary. This will be relevant when we bring in Leaflet.js.</p>
+<h3 id="lets-a-variable-go">Let&rsquo;s a-(variable)-go!<a class="headerlink" href="#lets-a-variable-go" title="Permanent link">&para;</a></h3>
+<p>Remember how we had field types in QGIS? Like, double, float and string? In programming languages we call those &ldquo;types.&rdquo; With JavaScript, variables are automatically assigned types based on their declaration. We&rsquo;ll discuss more next week, but is a quick introducing the concept of variables and declarations.</p>
+<p>This is an example of a declaration:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">day</span> <span class="o">=</span> <span class="mf">8</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;Albert&quot;</span><span class="p">;</span>
+</code></pre></div>
+</td></tr></table>
+Here <code>day</code> is a <strong>number</strong> type and <code>name</code> is a <strong>string</strong> type. Each type has certain properties with them, for example you can add <strong>numbers</strong> together using something like <code>day + day</code>, but you adding strings will simply concatenate and not total them.</p>
+<p>Important note, that with JavaScript ES7, we no longer use <code>var</code>, but instead <code>let</code> and <code>const</code> to declare variables. They get declared in the same way:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">day</span> <span class="o">=</span> <span class="mf">8</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;Albert&quot;</span><span class="p">;</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="let-vs-const-vs-var">Let vs Const vs Var<a class="headerlink" href="#let-vs-const-vs-var" title="Permanent link">&para;</a></h3>
+<p>What is the difference? </p>
+<ol>
+<li><code>let</code> declaration allows a variable to change</li>
+<li><code>const</code> means a variable is constant and will never change.</li>
+<li><code>var</code> can be both changed and never changed depending on where it was declared! VERY PROBLEMATIC!</li>
+</ol>
+<p>Because <code>var</code> can be changing (mutable) and unchanging at the same time, so it was broken off into two variable types, <code>let</code> and <code>const</code>. </p>
+<p>So, bye bye <code>var</code> and <code>LET</code> us welcome our new <code>CONST</code> variables to the programming world.</p>
+<p>To recap: NEVER USE <code>var</code> unless you have to code for old browsers.</p>
+<h3 id="consolelog">Console.log()<a class="headerlink" href="#consolelog" title="Permanent link">&para;</a></h3>
+<p>By itself, our script tag does nothing. So, one VERY important JavaScript method that we should familarize ourself with is <code>console.log()</code>, because it allows us to test our code without things showing up in the webpage.</p>
+<p>Add the following script:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello Asian Am 191! :)&#39;</span><span class="p">);</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table></p>
+<h4 id="nothing-happened-what">Nothing happened?! What!?<a class="headerlink" href="#nothing-happened-what" title="Permanent link">&para;</a></h4>
+<p>Actually, you are about to unlock your full web developer potential! </p>
+<p>In Firefox, right click anywhere on the page and the click <code>Inspect Element</code>:
+<img alt="" src="../media/click_anywhere.png" />
+This opens the <code>Developer Toolbar</code>!! You can find it by going to the Menu and going to <code>Web Developer</code> and then <code>Web Developer Tools</code>.</p>
+<p>Click on the Console button:</p>
+<p><img alt="" src="../media/console.png" /></p>
+<p>Yay! Our message is there!</p>
+<p><img alt="" src="../media/console_log_worked.png" /></p>
+<h3 id="linking-to-another-javascript-file">Linking to another JavaScript file<a class="headerlink" href="#linking-to-another-javascript-file" title="Permanent link">&para;</a></h3>
+<p>Similar to the CSS files, we can move the JavaScript file into its own folder to avoid cluttering the HTML file. Importing libraries is the main way we level up our webpage.</p>
+<p>BUT!!! Instead of <code>&lt;link&gt;</code> we use the <code>&lt;script&gt;</code> tag:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code> <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;YOUR_SCRIPT_NAME.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span> 
+</code></pre></div>
+</td></tr></table>
+<p>The <code>src</code> attribute is location of your file.</p>
+<h3 id="in-class-exercise-2">In-class Exercise #2<a class="headerlink" href="#in-class-exercise-2" title="Permanent link">&para;</a></h3>
+<blockquote>
+<h4 id="task">Task:<a class="headerlink" href="#task" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Create a new folder called <code>js</code></li>
+<li>Add our script in there</li>
+<li>Get our message to show up in the console </li>
+</ul>
+</blockquote>
+<h2 id="hello-leaflet-finally">Hello Leaflet&hellip; Finally..<a class="headerlink" href="#hello-leaflet-finally" title="Permanent link">&para;</a></h2>
+<p>OK, why did we do ALL of that? Well, when we use Leaflet, we actually need to bring in Leaflet&rsquo;s external CSS and JavaScript files!</p>
+<p>So, in our header, let&rsquo;s add the following:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cm">&lt;!-- Leaflet&#39;s css--&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://unpkg.com/leaflet@1.7.1/dist/leaflet.css&quot;</span> <span class="p">/&gt;</span>
+
+<span class="cm">&lt;!-- Leaflet&#39;s JavaScript--&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://unpkg.com/leaflet@1.7.1/dist/leaflet.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>Now, let&rsquo;s go ahead and add a container for our map. </p>
+<p>After <code>&lt;div id="main"&gt;&lt;/div&gt;</code> add a new <code>&lt;div&gt;&lt;/div&gt;</code> tag, and give it an ID attribute of &ldquo;map&rdquo;:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;map&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<p>With our container ready to go, open up the JavaScript file again and add the following Leaflet code template:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// JavaScript const variable declaration</span>
+<span class="kd">const</span> <span class="nx">map</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s1">&#39;map&#39;</span><span class="p">).</span><span class="nx">setView</span><span class="p">([</span><span class="mf">34.0709</span><span class="p">,</span> <span class="o">-</span><span class="mf">118.444</span><span class="p">],</span> <span class="mf">15</span><span class="p">);</span>
+
+<span class="c1">// Leaflet tile layer, i.e. the base map</span>
+<span class="nx">L</span><span class="p">.</span><span class="nx">tileLayer</span><span class="p">(</span><span class="s1">&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">attribution</span><span class="o">:</span> <span class="s1">&#39;&amp;copy; &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#39;</span>
+<span class="p">}).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">);</span>
+
+<span class="c1">//JavaScript let variable declaration to create a marker</span>
+<span class="kd">let</span> <span class="nx">marker</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">marker</span><span class="p">([</span><span class="mf">34.0709</span><span class="p">,</span> <span class="o">-</span><span class="mf">118.444</span><span class="p">]).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">bindPopup</span><span class="p">(</span><span class="s1">&#39;Math Sciences 4328 aka the Technology Sandbox&lt;br&gt; is the lab where I work in &#39;</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">openPopup</span><span class="p">();</span>
+</code></pre></div>
+</td></tr></table>
+<h4 id="class-exercise-3-adding-more-markers">Class Exercise #3 - Adding more markers<a class="headerlink" href="#class-exercise-3-adding-more-markers" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Looking at the code above a little bit, we can see some latitude/longitude pairs. Copy the marker code add more markers of your choosing. <strong>Note</strong>: Be sure give the marker variable a new name, like <code>marker2</code>.  </li>
+<li>To find latitude/longitude of coordinates, please use this website:</li>
+<li>
+<p><a href="https://www.latlong.net/">https://www.latlong.net/</a></p>
+</li>
+<li>
+<p>Optional: Not happy with the basemap?
+See if you can switch the basemap out by visiting here: </p>
+</li>
+<li><a href="https://leaflet-extras.github.io/leaflet-providers/preview/">https://leaflet-extras.github.io/leaflet-providers/preview/</a></li>
+</ul>
+<h2 id="using-github-pages">Using GitHub Pages<a class="headerlink" href="#using-github-pages" title="Permanent link">&para;</a></h2>
+<p>Save and commit your project to GitHub.</p>
+<p>Then visit your repository link on GitHub.</p>
+<p>Click on Settings:
+<img alt="" src="../media/gitHubPages_0.png" /></p>
+<p>Scroll down to &ldquo;GitHub pages&rdquo; and under source click here: 
+<img alt="" src="../media/gitHubPages_1.png" /></p>
+<p>Click on the &ldquo;main&rdquo; branch:
+<img alt="" src="../media/gitHubPages_2.png" /></p>
+<p>Choose &ldquo;root&rdquo;:
+<img alt="" src="../media/gitHubPages_3a.png" /></p>
+<p>Click on Save:
+<img alt="" src="../media/gitHubPages_4a.png" /></p>
+<p>Copy the link and put it in your <code>readme.md</code> file in the <code>week 2</code> folder.
+<img alt="" src="../media/gitHubPages_5.png" /></p>
+<p>You can see the <code>html</code> file if you go to 
+<code>https://YOUR_GITHUB_ACCOUNT.github.io/21S-ASIAAM-191A-Assignments/Week_02/index.html</code></p>
+<h2 id="adding-a-geojson-file">Adding a GeoJSON file<a class="headerlink" href="#adding-a-geojson-file" title="Permanent link">&para;</a></h2>
+<p>Copy <code>lab1.geojson</code> from last week into this lab&rsquo;s folder. If you changed the name of it, please use  your filename to follow along or rename the file to lab1.geojson.</p>
+<h3 id="fetch-and-then">FETCH and THEN<a class="headerlink" href="#fetch-and-then" title="Permanent link">&para;</a></h3>
+<p>We will use the JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">Fetch API</a> to get our geojson file and then add it to our map. In JavaScript whenever you see a <code>.</code> after a parenthesis, it means you are <strong>chaining</strong> a command to follow it. In this case we are chaining a <code>then</code> method. In the <code>then</code> method we will have a </p>
+<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nx">fetch</span><span class="p">(</span><span class="s2">&quot;js/lab1.geojson&quot;</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;{</span>
+        <span class="c1">// Basic Leaflet method to add GeoJSON data</span>
+        <span class="nx">L</span><span class="p">.</span><span class="nx">geoJSON</span><span class="p">(</span><span class="nx">data</span><span class="p">).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">)</span>
+    <span class="p">});</span>
+</code></pre></div>
+</td></tr></table>
+The map should now have a blue tint over it and you cannot interact with it. Not really useful.</p>
+<p>Add the basic Leaflet method for a geojson:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// the leaflet method for adding a geojson</span>
+<span class="nx">L</span><span class="p">.</span><span class="nx">geoJSON</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">style</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">feature</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">{</span><span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;red&#39;</span><span class="p">};</span>
+    <span class="p">}</span>
+<span class="p">}).</span><span class="nx">bindPopup</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">layer</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">layer</span><span class="p">.</span><span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
+<span class="p">}).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">);</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>The completed <code>fetch</code> code should look like this:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nx">fetch</span><span class="p">(</span><span class="s2">&quot;js/lab1.geojson&quot;</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+        <span class="p">})</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;{</span>
+        <span class="c1">// Basic Leaflet method to add GeoJSON data</span>
+                        <span class="c1">// the leaflet method for adding a geojson</span>
+            <span class="nx">L</span><span class="p">.</span><span class="nx">geoJSON</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="p">{</span>
+                <span class="nx">style</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">feature</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="p">{</span><span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;red&#39;</span><span class="p">};</span>
+                <span class="p">}</span>
+            <span class="p">}).</span><span class="nx">bindPopup</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">layer</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nx">layer</span><span class="p">.</span><span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
+            <span class="p">}).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">);</span>
+        <span class="p">});</span>
+</code></pre></div>
+</td></tr></table>
+Notice now that when you click on the map, the name of the counties show up.</p>
+<h2 id="the-power-of-web-mapping">The power of web mapping<a class="headerlink" href="#the-power-of-web-mapping" title="Permanent link">&para;</a></h2>
+<p>The boundary that we added from last week doesn&rsquo;t really seem to add much. Let&rsquo;s put to practice what web development and GIS can do for power.</p>
+<p>Head over to this website:
+<a href="http://www.geojson.io/">http://www.geojson.io/</a></p>
+<p>Click on the marker tool:</p>
+<p><img alt="" src="../media/geojson1.png" /></p>
+<p>Click on a location of interest to you:</p>
+<p><img alt="" src="../media/geojson2.png" /></p>
+<p>Add a data column:</p>
+<p><img alt="" src="../media/geojson3.png" /></p>
+<p>Call it place and click &ldquo;OK&rdquo;:</p>
+<p><img alt="" src="../media/geojson4.png" /></p>
+<p>Click inside the place column</p>
+<p><img alt="" src="../media/geojson6.png" /></p>
+<p>Type in a description for the place, in this case I called it &ldquo;home&rdquo;.</p>
+<p><img alt="" src="../media/geojson7a.png" /></p>
+<p>Zoom out:
+<img alt="" src="../media/geojson8.png" /></p>
+<p>Click the edit button:</p>
+<p><img alt="" src="../media/geojson9.png" /></p>
+<p>Click the move the marker to the adjust the location:</p>
+<p><img alt="" src="../media/geojson9a.png" /></p>
+<p>Save your edit:</p>
+<p><img alt="" src="../media/geojson10.png" /></p>
+<p>Repeat these steps until you have a few points.</p>
+<p>Add another column called &ldquo;color&rdquo;, to put some color to your map later.</p>
+<p><img alt="" src="../media/geojson10.png" /></p>
+<p>Save your file:</p>
+<p><img alt="" src="../media/geojson11.png" /></p>
+<p>Click geoJSON:</p>
+<p><img alt="" src="../media/geojson12.png" /></p>
+<p>Download the file to your computer:</p>
+<p><img alt="" src="../media/geojson13.png" /></p>
+<p>Copy the file into your project folder:</p>
+<p><img alt="" src="../media/geojson15.png" /></p>
+<p>Change <code>lab1.geojson</code> to <code>map.geojson</code> (the name of the file we downloaded) in the <code>fetch</code> code:</p>
+<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nx">fetch</span><span class="p">(</span><span class="s2">&quot;js/map.geojson&quot;</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">()</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;{</span>
+        <span class="c1">// Basic Leaflet method to add GeoJSON data</span>
+        <span class="nx">L</span><span class="p">.</span><span class="nx">geoJSON</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">myLayerOptions</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">bindPopup</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">layer</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="nx">layer</span><span class="p">.</span><span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">place</span><span class="p">;</span>
+        <span class="p">}).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">);</span>
+    <span class="p">})</span>
+</code></pre></div>
+</td></tr></table>
+Bam! It updated!</p>
+<p>Utilize our color property:</p>
+<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">customMarker</span> <span class="p">(</span><span class="nx">feature</span><span class="p">,</span> <span class="nx">latlng</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">L</span><span class="p">.</span><span class="nx">circleMarker</span><span class="p">(</span><span class="nx">latlng</span><span class="p">,</span> <span class="p">{</span> <span class="nx">color</span><span class="o">:</span> <span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">color</span> <span class="p">})</span>
+  <span class="p">}</span>
+
+  <span class="c1">// create an options object</span>
+  <span class="kd">let</span> <span class="nx">myLayerOptions</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">pointToLayer</span><span class="o">:</span> <span class="nx">customMarker</span>
+  <span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+Now think about how empowering it was for you to be able to add data to the map yourselves. Whether you were clicking random spots or trying to find your old favorite places to visit, the ability to mark things is a reclaiming of mapping for yourself. This sense of staking a claim is what I mean when I refer to &ldquo;empowering community voices&rdquo;.</p>
+<h3 id="final-template-code">Final Template Code:<a class="headerlink" href="#final-template-code" title="Permanent link">&para;</a></h3>
+<p><code>index.html</code>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Hello World with Leaflet<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;shortcut icon&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>
+        <span class="cm">&lt;!-- I&#39;d add some style if here if I had any --&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style/style.css&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello Asian Am 191! :)&#39;</span><span class="p">)</span>
+        <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+        <span class="cm">&lt;!-- Leaflet&#39;s css--&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://unpkg.com/leaflet@1.7.1/dist/leaflet.css&quot;</span> <span class="p">/&gt;</span>
+
+        <span class="cm">&lt;!-- Leaflet&#39;s JavaScript--&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://unpkg.com/leaflet@1.7.1/dist/leaflet.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;./js/lab1.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+            My Map
+        <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;main&quot;</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;map&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;footer&quot;</span><span class="p">&gt;</span>
+            Copyright(2021)
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;./js/init.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table></p>
+<p><code>init.js</code>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">map</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s1">&#39;map&#39;</span><span class="p">).</span><span class="nx">setView</span><span class="p">([</span><span class="mf">34.0709</span><span class="p">,</span> <span class="o">-</span><span class="mf">118.444</span><span class="p">],</span> <span class="mf">5</span><span class="p">);</span>
+
+<span class="c1">// Leaflet tile layer, i.e. the base map</span>
+<span class="nx">L</span><span class="p">.</span><span class="nx">tileLayer</span><span class="p">(</span><span class="s1">&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">attribution</span><span class="o">:</span> <span class="s1">&#39;&amp;copy; &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#39;</span>
+<span class="p">}).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">);</span>
+
+<span class="c1">//JavaScript let variable declaration to create a marker</span>
+<span class="kd">let</span> <span class="nx">marker</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">marker</span><span class="p">([</span><span class="mf">34.0709</span><span class="p">,</span> <span class="o">-</span><span class="mf">118.444</span><span class="p">]).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">bindPopup</span><span class="p">(</span><span class="s1">&#39;Math Sciences 4328 aka the Technology Sandbox&lt;br&gt; is the lab where I work in &#39;</span><span class="p">)</span>
+        <span class="c1">// .openPopup();</span>
+
+<span class="nx">fetch</span><span class="p">(</span><span class="s2">&quot;js/map.geojson&quot;</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+        <span class="p">})</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;{</span>
+        <span class="c1">// Basic Leaflet method to add GeoJSON data</span>
+                        <span class="c1">// the leaflet method for adding a geojson</span>
+            <span class="nx">L</span><span class="p">.</span><span class="nx">geoJSON</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="p">{</span>
+                <span class="nx">style</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">feature</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="p">{</span><span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;red&#39;</span><span class="p">};</span>
+                <span class="p">}</span>
+            <span class="p">}).</span><span class="nx">bindPopup</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">layer</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nx">layer</span><span class="p">.</span><span class="nx">feature</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">place</span><span class="p">;</span>
+            <span class="p">}).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">);</span>
+        <span class="p">});</span>
+</code></pre></div>
+</td></tr></table></p>
+<p><code>style/style.css</code>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">html</span><span class="o">,</span><span class="w"> </span><span class="nt">body</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+<span class="w"> </span><span class="nt">body</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">     </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span><span class="w"></span>
+<span class="w">     </span><span class="k">grid-template-rows</span><span class="p">:</span><span class="w"> </span><span class="mf">.1</span><span class="n">fr</span><span class="w"> </span><span class="mf">.30</span><span class="n">fr</span><span class="w"> </span><span class="mf">.60</span><span class="n">fr</span><span class="w"> </span><span class="mf">.05</span><span class="n">fr</span><span class="p">;</span><span class="w"></span>
+<span class="w">     </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">;</span><span class="w"></span>
+<span class="w">     </span><span class="k">grid-template-areas</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;header&quot;</span><span class="w"> </span><span class="s2">&quot;main&quot;</span><span class="w"> </span><span class="s2">&quot;map&quot;</span><span class="w">  </span><span class="s2">&quot;footer&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">     </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"></span>
+<span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+<span class="w"> </span><span class="nt">header</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">header</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mf">.2</span><span class="n">fr</span><span class="w"> </span><span class="mf">.6</span><span class="n">fr</span><span class="w"> </span><span class="mf">.2</span><span class="n">fr</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"></span>
+<span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+<span class="p">.</span><span class="nc">main</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">main</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">aqua</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="p">#</span><span class="nn">map</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">map</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="kt">vh</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="p">#</span><span class="nn">footer</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">footer</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table></p>
+<h2 id="lab-assignment-map-portfolio">Lab Assignment - Map Portfolio:<a class="headerlink" href="#lab-assignment-map-portfolio" title="Permanent link">&para;</a></h2>
+<h3 id="due-415">Due 4/15<a class="headerlink" href="#due-415" title="Permanent link">&para;</a></h3>
+<p>Time to put your skills to the test and create a home page for the individual maps that you will be making this quarter. Describe some of your interests and include a map with some markers. This is your portfolio, so feel free to delete or add anything. If you made multiple HTML pages, please link them all to the <code>index.html</code> using the <code>&lt;a href=""&gt;&lt;/a&gt;</code> tag&gt;.</p>
+<p>Your map portfolio must contain the following:</p>
+<ul>
+<li>A <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"><code>&lt;h1&gt;</code> tag</a> for your title</li>
+<li>Add at least 2-3 markers to the map with a common theme, for example organizations you&rsquo;ve volunteered for or places you&rsquo;ve traveled.</li>
+<li>A <code>&lt;h2&gt;</code> or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"><code>&lt;h3&gt;</code> tag</a> to create a title for your map. </li>
+<li>A <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p"><code>&lt;p&gt;</code> tag</a> for a paragraph describing yourself and your goals as a critical digital map maker.</li>
+<li>Style CSS by changing the background color, font, or anything else.</li>
+<li>Use an ordered list <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol"><code>&lt;ol&gt;</code> tag</a> and an unordered list <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul"><code>&lt;ul&gt;</code> tag</a> to list things.</li>
+<li>Include an <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"><code>&lt;img&gt;</code> tag</a> with a photo of yourself or an avatar. Feel free to add other images too to give some flavor to your page, like food or desserts.</li>
+<li>Use the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code> tag</a> to add a link to 2 other web pages.</li>
+<li>Set up GitHub pages for your repo</li>
+</ul>
+<h3 id="submission">Submission:<a class="headerlink" href="#submission" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Commit and publish your file to your repo&rsquo;s <a href="https://guides.github.com/features/pages/">GitHub pages</a></li>
+<li>
+<p>Find your <code>index.html</code> in the <code>Week_02</code> folder and copy the URL. It should look something like this:</p>
+</li>
+<li>
+<p><a href="https://albertkun.github.io/21S-ASIAAM-191A-Assignments/Week_02/index.html">https://albertkun.github.io/21S-ASIAAM-191A-Assignments/Week_02/index.html</a></p>
+</li>
+<li>
+<p>Paste your link as a comment in the <a href="https://github.com/albertkun/21S-ASIAAM-191A/discussions/89">Discussion forum for Lab Assignment #2</a></p>
+</li>
+</ul>
+<h3 id="extra-credit-any-of-these">Extra Credit: (any of these)<a class="headerlink" href="#extra-credit-any-of-these" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Add another <code>geojson</code> (it can be <code>lab1.geojson</code> or anything else) to a completely different HTML page not <code>index.html</code>. (Be sure to link it to your <code>index.html</code> and describe what you are showing)</li>
+<li>Add some Leaflet features that we did not discuss in class.</li>
+<li>Check out the <a href="../extra/">Extra</a> or <a href="http://www.leafletjs.com/">Leaflet documentation</a> and try something there.</li>
+</ul>
+<h3 id="html-resources-to-help-with-your-assignment">HTML Resources to help with your assignment:<a class="headerlink" href="#html-resources-to-help-with-your-assignment" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Short MDN HTML Syntax (good recap): 
+<a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started</a></p>
+</li>
+<li>
+<p>Long overview and explanation of HTML:
+<a href="https://geobgu.xyz/web-mapping2/html.html">https://geobgu.xyz/web-mapping2/html.html</a></p>
+</li>
+</ul>
+
+
+
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2022-01-25
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-top--hidden md-icon" data-md-component="top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Footer -->
+<footer class="md-footer">
+<div class="md-footer-nav" >
+  <!-- Link to previous and/or next page -->
+  
+    <nav
+      class="md-footer__inner md-grid"
+      aria-label="Footer"
+    >
+
+      <!-- Link to previous page -->
+      
+        
+        <a
+          href="../extra/"
+          class="md-footer__link md-footer__link--prev"
+          aria-label="Previous: Extra"
+          rel="prev"
+        >
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Extra
+            </div>
+          </div>
+        </a>
+      
+
+      <!-- Link to next page -->
+      
+        
+        <a
+          href="../../Materials/group_assigment_2/"
+          class="md-footer__link md-footer__link--next"
+          aria-label="Next: Group Assignment #2: Memo"
+          rel="next"
+        >
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Group Assignment #2: Memo
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+</div>
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a
+          href="https://squidfunk.github.io/mkdocs-material/"
+          target="_blank" rel="noopener"
+        >
+          Material for MkDocs
+        </a>
+        
+      </div>
+
+      <!-- Social links -->
+      <div class="md-social">
+  
+</div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "content.code.annotate", "search.highlight", "toc.integrate", "navigation.indexes", "navigation.top", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.f7fe2898.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.03f8e4a4.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+      
+        <script src="../../../etc/js/tables.js"></script>
+      
+        <script src="../../../etc/js/extra.js"></script>
+      
+    
+  </body>
+</html>

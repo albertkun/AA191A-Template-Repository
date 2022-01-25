@@ -1,0 +1,4382 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        
+      
+      <link rel="icon" href="../../../etc/media/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.8+insiders-4.6.1">
+    
+    
+      
+        <title>Map Layers and Visual Design - Asian American Studies 191A Course Material</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.bfcc4ef8.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+      <link rel="preload" as="style" href="../../../assets/stylesheets/vendor/mermaid.d607d465.min.css">
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial:300,400,400i,700%7C&display=fallback">
+        <style>:root{--md-text-font:"Arial";--md-code-font:""}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../etc/css/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="">
+  
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#map-layers-and-visual-design" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Asian American Studies 191A Course Material" class="md-header__button md-logo" aria-label="Asian American Studies 191A Course Material" data-md-component="logo">
+      
+  <img src="../../../etc/media/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Asian American Studies 191A Course Material
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Map Layers and Visual Design
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="white"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/albertkun/AA191A-Template-Repository/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+
+
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Guides/git_cloning/" class="md-tabs__link">
+          
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_01/1_pre_lab_1/" class="md-tabs__link">
+          
+  
+  Week 01
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_02/readme/" class="md-tabs__link">
+          
+  
+  Week 02
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_03/readme/" class="md-tabs__link">
+          
+  
+  Week 03
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_04/readme/" class="md-tabs__link">
+          
+  
+  Week 04
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_05/readme/" class="md-tabs__link">
+          
+  
+  Week 05
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_06/readme/" class="md-tabs__link">
+          
+  
+  Week 06
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+      
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../readme/" class="md-tabs__link md-tabs__link--active">
+          
+  
+  Week 07
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_08/readme/" class="md-tabs__link">
+          
+  
+  Week 08
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_09/readme/" class="md-tabs__link">
+          
+  
+  Week 09
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../week_10/readme/" class="md-tabs__link">
+          
+  
+  Week 10
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Asian American Studies 191A Course Material" class="md-nav__button md-logo" aria-label="Asian American Studies 191A Course Material" data-md-component="logo">
+      
+  <img src="../../../etc/media/favicon.png" alt="logo">
+
+    </a>
+    Asian American Studies 191A Course Material
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/albertkun/AA191A-Template-Repository/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          
+  
+  <span class="md-ellipsis">
+    Guides
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/git_cloning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide for cloning
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/git_commit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide for using Git Commit in VS Code
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/git_creating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide for creating a repository
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/git_fetch_remote_upstream/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Updating the Lab Assignment repo
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/git_forking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide for forking
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/github_sign_up/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide for signing up to GitHub
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/gitscm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide for installing Git SCM
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/live_share/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quickstart for Live Share
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How-To Guides
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/submit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Submit Lab Assignment pages:
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Guides/thinking_caps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Submit a Thinking Cap Discussion
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          
+  
+  <span class="md-ellipsis">
+    Week 01
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 01" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Week 01
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/1_pre_lab_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-Lab: Week 1
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/2_thinking_cap_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Thinking cap #1
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/3_group_project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Due Thursday 4/8:
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/a_optional_gis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to GIS
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 1 - GIS, Data, and Ethics
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_6">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/Lab/Lab1_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab 1.2 "Hello World!" QGIS Bootcamp
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/Lab/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GITing started with Spatial Data Sets
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_7" type="checkbox" id="__nav_3_7" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_7">
+          
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Materials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          Materials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/Materials/1_pre_lab_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-Lab: Week 1
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/Materials/2_thinking_cap_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Thinking cap #1
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_01/Materials/a_optional_gis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to GIS
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          
+  
+  <span class="md-ellipsis">
+    Week 02
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 02" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Week 02
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_02/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 2 - Humanizing Technology
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_2">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_02/Lab/extra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extra
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_02/Lab/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab 2: Hello World (of HTML, Javascript, CSS, and Leaflet mapping!)
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3">
+          
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Materials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Materials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_02/Materials/group_assigment_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Group Assignment #2: Memo
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_02/Materials/lab_assignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab Assignment - Map Portfolio:
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_02/Materials/pre-lab/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-Lab: Week 2
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          
+  
+  <span class="md-ellipsis">
+    Week 03
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 03" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Week 03
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_03/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 3 - Open Source and Web Mapping
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_2">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_03/Lab/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JavaScript FUNctions
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_3">
+          
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Materials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Materials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_03/Materials/extra_credit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extra Credit Assignment due 4/22
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_03/Materials/lab_assignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab assignment
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_03/Materials/pre-lab/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre lab
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          
+  
+  <span class="md-ellipsis">
+    Week 04
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 04" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Week 04
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_04/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 4 - Developing for Civil Society
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6_2">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_04/Lab/extra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extra
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_04/Lab/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meaningful Survey Design
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6_3">
+          
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Materials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Materials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_04/Materials/Group_Assignment_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Survey
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_04/Materials/pre-lab/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre lab
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          
+  
+  <span class="md-ellipsis">
+    Week 05
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 05" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Week 05
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_05/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 5 - Society, Technology, and Ethics
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_2" type="checkbox" id="__nav_7_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_2">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_05/Lab/lab_assignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab assignment
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_05/Lab/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loops and APIs
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_3" type="checkbox" id="__nav_7_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_3">
+          
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Materials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_3">
+          <span class="md-nav__icon md-icon"></span>
+          Materials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_05/Materials/extra_reading_response/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extra Reading Response
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_05/Materials/group_assignment_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Survey Diagram and Wireframe
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          
+  
+  <span class="md-ellipsis">
+    Week 06
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 06" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Week 06
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_06/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 6 - Human-Centered Design
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_2" type="checkbox" id="__nav_8_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_2">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_06/Lab/lab_assignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab Assignment #5 - CSS Grid Layouts
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_06/Lab/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design DeCSSions
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_3" type="checkbox" id="__nav_8_3" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_3">
+          
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Materials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_3">
+          <span class="md-nav__icon md-icon"></span>
+          Materials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_06/Materials/pre-lab/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-lab
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          
+  
+  <span class="md-ellipsis">
+    Week 07
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 07" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Week 07
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 7 - From Design to Data Justice
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_2" type="checkbox" id="__nav_9_2" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9_2">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_9_2">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab_assignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab Assignment #6 - Conditional Visual Importance
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Map Layers and Visual Design
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Map Layers and Visual Design
+  </span>
+
+      </a>
+      
+        <!--
+  Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<nav class="md-nav md-nav--secondary " aria-label="Table of contents">
+
+  
+  
+  
+    
+  
+
+  <!-- Render item list -->
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-else-conditional-statements" class="md-nav__link">
+    if-else Conditional Statements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leaflet-featuregroups" class="md-nav__link">
+    Leaflet featureGroups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-to-leaflet-the-markers-go-and-use-circlemarkers" class="md-nav__link">
+    Time to Leaflet the markers go, and use circleMarkers!:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-assignment-6-conditional-visual-importance" class="md-nav__link">
+    Lab Assignment #6 - Conditional Visual Importance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#submission" class="md-nav__link">
+    Submission
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          
+  
+  <span class="md-ellipsis">
+    Week 08
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 08" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Week 08
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_08/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 8 - Collaboration and mentoring for social change
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10_2">
+          
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Materials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_2">
+          <span class="md-nav__icon md-icon"></span>
+          Materials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_08/Materials/groupassignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Group Assignment #5 - Rough Draft
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_08/Materials/pre-lab/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre lab
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3" type="checkbox" id="__nav_10_3" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10_3">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_3">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_08/lab/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collaborating with GitHub and Plugins
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_11">
+          
+  
+  <span class="md-ellipsis">
+    Week 09
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 09" data-md-level="1">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          Week 09
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_09/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 9 - Connecting Activism, Technology, and Social Change
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_12">
+          
+  
+  <span class="md-ellipsis">
+    Week 10
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Week 10" data-md-level="1">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
+          Week 10
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_10/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 10 - Beyond Web Development and GIS for Social Change
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_2" type="checkbox" id="__nav_12_2" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_12_2">
+          
+  
+  <span class="md-ellipsis">
+    Lab
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_12_2">
+          <span class="md-nav__icon md-icon"></span>
+          Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../week_10/Lab/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Final Finishing Touches
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/albertkun/AA191A-Template-Repository/edit/dev/docs/week_07/Lab/readme.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+  
+
+
+
+<h1 id="map-layers-and-visual-design">Map Layers and Visual Design<a class="headerlink" href="#map-layers-and-visual-design" title="Permanent link">&para;</a></h1>
+<h3 id="objectives">Objectives:<a class="headerlink" href="#objectives" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use conditional statements to add content into Leaflet <code>FeatureGroups</code></li>
+<li>Use Leaflet&rsquo;s <code>circleMarkers</code> to visualize points</li>
+<li>Change the basemap for our maps</li>
+</ul>
+<p>Today we will focus on styling our map through the use of Leaflet <a href="https://leafletjs.com/reference.html#featuregroup"><code>Feature groups</code></a>, which means more JavaScript!</p>
+<p><code>Feature groups</code> are like boxes that you can use to group your map content. For this lab we will be creating two layers for our survey question of <code>Do you speak English fluently?</code></p>
+<p>One group will be for <code>yes</code> and another group for <code>no</code>.</p>
+<h3 id="our-goal-today">Our goal today:<a class="headerlink" href="#our-goal-today" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../media/muchCleaner.png" /></p>
+<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
+<p>Start by creating a <code>week_6</code> folder in your assignments repo.</p>
+<blockquote>
+<h3 id="optional-if-you-want-to-work-with-your-own-layout-you-can-copy-the-contents-of-your-week_5-folder-and-skip-the-following-setup-section">Optional: If you want to work with your own layout, you can copy the contents of your <code>week_5</code> folder and skip the following setup section.<a class="headerlink" href="#optional-if-you-want-to-work-with-your-own-layout-you-can-copy-the-contents-of-your-week_5-folder-and-skip-the-following-setup-section" title="Permanent link">&para;</a></h3>
+</blockquote>
+<h3 id="boiler-plate-code">Boiler Plate code<a class="headerlink" href="#boiler-plate-code" title="Permanent link">&para;</a></h3>
+<p>Create the following files:</p>
+<blockquote>
+<p>index.html
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>COVID-19 Vaccination Stories<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;shortcut icon&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;styles/style.css&quot;</span><span class="p">&gt;</span>
+
+        <span class="cm">&lt;!-- Leaflet&#39;s css--&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://unpkg.com/leaflet@1.7.1/dist/leaflet.css&quot;</span> <span class="p">/&gt;</span>
+
+        <span class="cm">&lt;!-- Leaflet&#39;s JavaScript--&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://unpkg.com/leaflet@1.7.1/dist/leaflet.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+     <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>Welcome to COVID-19 Vaccination Stories<span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;contents&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;map&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;survey&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://docs.google.com/forms/d/e/1FAIpQLSdqVT10bEbUrULMu6Etwj4ZBXGf-LAxcKohAINFbIdZmHS6OA/viewform?embedded=true&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;640&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;654&quot;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">marginheight</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">marginwidth</span><span class="o">=</span><span class="s">&quot;0&quot;</span><span class="p">&gt;</span>Loading…<span class="p">&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/init.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>js/init.js
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">map</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s1">&#39;map&#39;</span><span class="p">).</span><span class="nx">setView</span><span class="p">([</span><span class="mf">34.0709</span><span class="p">,</span> <span class="o">-</span><span class="mf">118.444</span><span class="p">],</span> <span class="mf">5</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">&quot;https://spreadsheets.google.com/feeds/list/1upD99bKWIO68jL8MKWV67KE-_H_TVn2bCwqyQkqNsBw/oxw5dh3/public/values?alt=json&quot;</span>
+
+<span class="nx">L</span><span class="p">.</span><span class="nx">tileLayer</span><span class="p">(</span><span class="s1">&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">attribution</span><span class="o">:</span> <span class="s1">&#39;&amp;copy; &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#39;</span>
+<span class="p">}).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">);</span>
+
+<span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+        <span class="p">})</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;{</span>
+                <span class="c1">// console.log(data)</span>
+                <span class="nx">formatData</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>
+        <span class="p">}</span>
+<span class="p">)</span>
+
+<span class="kd">function</span> <span class="nx">addMarker</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
+    <span class="nx">L</span><span class="p">.</span><span class="nx">marker</span><span class="p">([</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">]).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">).</span><span class="nx">bindPopup</span><span class="p">(</span><span class="sb">`&lt;h2&gt;</span><span class="si">${</span><span class="nx">data</span><span class="p">.</span><span class="nx">timestamp</span><span class="si">}</span><span class="sb">&lt;/h2&gt;`</span><span class="p">)</span>
+    <span class="nx">createButtons</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">location</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nx">data</span><span class="p">.</span><span class="nx">timestamp</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">createButtons</span><span class="p">(</span><span class="nx">lat</span><span class="p">,</span><span class="nx">lng</span><span class="p">,</span><span class="nx">title</span><span class="p">){</span>
+    <span class="kd">const</span> <span class="nx">newButton</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;button&quot;</span><span class="p">);</span>
+    <span class="nx">newButton</span><span class="p">.</span><span class="nx">id</span> <span class="o">=</span> <span class="s2">&quot;button&quot;</span><span class="o">+</span><span class="nx">title</span><span class="p">;</span>
+    <span class="nx">newButton</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">title</span><span class="p">;</span>
+    <span class="nx">newButton</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span><span class="nx">lat</span><span class="p">);</span> 
+    <span class="nx">newButton</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;lng&quot;</span><span class="p">,</span><span class="nx">lng</span><span class="p">);</span>
+    <span class="nx">newButton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+        <span class="nx">map</span><span class="p">.</span><span class="nx">flyTo</span><span class="p">([</span><span class="nx">lat</span><span class="p">,</span><span class="nx">lng</span><span class="p">]);</span>
+    <span class="p">})</span>
+    <span class="kd">const</span> <span class="nx">spaceForButtons</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;contents&#39;</span><span class="p">)</span>
+    <span class="nx">spaceForButtons</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newButton</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">formatData</span><span class="p">(</span><span class="nx">theData</span><span class="p">){</span>
+        <span class="kd">const</span> <span class="nx">formattedData</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="kd">const</span> <span class="nx">rows</span> <span class="o">=</span> <span class="nx">theData</span><span class="p">.</span><span class="nx">feed</span><span class="p">.</span><span class="nx">entry</span>
+        <span class="k">for</span><span class="p">(</span><span class="kd">const</span> <span class="nx">row</span> <span class="k">of</span> <span class="nx">rows</span><span class="p">)</span> <span class="p">{</span>
+          <span class="kd">const</span> <span class="nx">formattedRow</span> <span class="o">=</span> <span class="p">{}</span>
+          <span class="k">for</span><span class="p">(</span><span class="kd">const</span> <span class="nx">key</span> <span class="ow">in</span> <span class="nx">row</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span><span class="p">(</span><span class="nx">key</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s2">&quot;gsx$&quot;</span><span class="p">))</span> <span class="p">{</span>
+                  <span class="nx">formattedRow</span><span class="p">[</span><span class="nx">key</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s2">&quot;gsx$&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="nx">row</span><span class="p">[</span><span class="nx">key</span><span class="p">].</span><span class="nx">$t</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+          <span class="nx">formattedData</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">formattedRow</span><span class="p">)</span>
+        <span class="p">}</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">formattedData</span><span class="p">)</span>
+        <span class="nx">formattedData</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">addMarker</span><span class="p">)</span>        
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>styles/style.css
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">body</span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">;</span><span class="w"> </span>
+<span class="w">    </span><span class="k">grid-auto-rows</span><span class="p">:</span><span class="w"> </span><span class="nf">minmax</span><span class="p">(</span><span class="mi">5</span><span class="kt">px</span><span class="p">,</span><span class="w"> </span><span class="kc">auto</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-template-areas</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;header header&quot;</span><span class="w"> </span><span class="s2">&quot;mappanel sidebar&quot;</span><span class="w"> </span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="nt">header</span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">header</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="p">#</span><span class="nn">map</span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="mi">90</span><span class="kt">vh</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">mappanel</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"> </span>
+
+<span class="p">#</span><span class="nn">contents</span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">sidebar</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="k">grid</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="nf">repeat</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c">/* fix for survey to fit in the iframe */</span><span class="w"></span>
+<span class="p">#</span><span class="nn">survey</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">overflow</span><span class="p">:</span><span class="w"> </span><span class="kc">hidden</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="c">/* 16:9 aspect ratio */</span><span class="w"></span>
+<span class="w">    </span><span class="k">padding-top</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">relative</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="p">#</span><span class="nn">survey</span><span class="w"> </span><span class="nt">iframe</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">absolute</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table></p>
+</blockquote>
+<h2 id="if-else-conditional-statements"><code>if-else</code> Conditional Statements<a class="headerlink" href="#if-else-conditional-statements" title="Permanent link">&para;</a></h2>
+<p>Conditional statements are important for being able to tell our code to do or not do something. The syntax for <code>if-else</code> statments are similar to <code>for-loop</code> in that they look like this:</p>
+<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">hello</span> <span class="o">=</span> <span class="s2">&quot;hi&quot;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">hello</span><span class="p">){</span>
+    <span class="c1">// do something</span>
+    <span class="c1">// optional: return something</span>
+<span class="p">}</span> 
+</code></pre></div>
+</td></tr></table>
+The <code>if</code> is a keyword that evalutes the condition within the <code>()</code>. 
+There are different ways to set <code>conditions</code> inside the <code>()</code>, but it must has to either be <code>true</code> or <code>false</code>. </p>
+<p>Here are some examples:</p>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>if(variable)</code></td>
+<td>Does this <code>variable</code> exist?</td>
+</tr>
+<tr>
+<td><code>if(variable == "yes")</code></td>
+<td>Does this <code>variable</code> equal to &ldquo;yes&rdquo;</td>
+</tr>
+<tr>
+<td><code>if(variable != "yEs")</code></td>
+<td>Does this <code>variable</code> NOT equal &ldquo;yEs&rdquo;</td>
+</tr>
+<tr>
+<td><code>if(variable &gt; 10 )</code></td>
+<td>Is this <code>variable</code> greater than 10?</td>
+</tr>
+<tr>
+<td><code>if(variable == false)</code></td>
+<td>Is this <code>variable</code> false?</td>
+</tr>
+<tr>
+<td><code>if(variable == null)</code></td>
+<td>Is this <code>variable</code> null?</td>
+</tr>
+<tr>
+<td><code>if(variable == anotherVariable)</code></td>
+<td>Is this <code>variable</code> the same as another variable?</td>
+</tr>
+<tr>
+<td><code>if(variable &gt; 1 &amp;&amp; variable &lt; 10)</code></td>
+<td>Is this <code>variable</code> greater than 1 <strong>AND</strong> is <code>variable</code> less than 10?</td>
+</tr>
+</tbody>
+</table>
+<p>You can check this MDN article on <code>truthy</code> and <code>falsy</code> for more examples:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">https://developer.mozilla.org/en-US/docs/Glossary/Truthy</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">https://developer.mozilla.org/en-US/docs/Glossary/Falsy</a></li>
+</ul>
+<p>The <code>&amp;&amp;</code> is a logical <code>AND</code> operator where all statements have to be <code>True</code> in order to be statisfied.</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND</a></li>
+</ul>
+<h4 id="great-what-else-is-there">Great, what <code>else</code> is there?<a class="headerlink" href="#great-what-else-is-there" title="Permanent link">&para;</a></h4>
+<p><code>else</code> acts like a default in case the <code>if</code> condition never is true:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">hi</span> <span class="o">=</span> <span class="s2">&quot;uh oh!&quot;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">hello</span> <span class="o">&amp;&amp;</span> <span class="nx">hi</span><span class="p">){</span>
+    <span class="c1">// do something IF `hello` and `hi` exist</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// do something else</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></p>
+<h3 id="class-exercise-1-lets-see-if-you-get-the-idea">Class Exercise #1: Let&rsquo;s see <code>IF</code> you get the idea!<a class="headerlink" href="#class-exercise-1-lets-see-if-you-get-the-idea" title="Permanent link">&para;</a></h3>
+<p>Create an <code>if-else</code>statement for the dataset in your mapplication within the <code>addMarker()</code> function to only add markers when a certain condition exists:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">addMarker</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
+    <span class="nx">L</span><span class="p">.</span><span class="nx">marker</span><span class="p">([</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">]).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">).</span><span class="nx">bindPopup</span><span class="p">(</span><span class="sb">`&lt;h2&gt;</span><span class="si">${</span><span class="nx">data</span><span class="p">.</span><span class="nx">timestamp</span><span class="si">}</span><span class="sb">&lt;/h2&gt;`</span><span class="p">)</span>
+    <span class="nx">createButtons</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">location</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nx">data</span><span class="p">.</span><span class="nx">timestamp</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<p>If you are using the lab dataset, filter out answers to the question<code>"Do you speak English fluently?"</code></p>
+<p><strong>Bonus: Can you use an <code>else</code> statement to show the number of those who speak other languages?</strong></p>
+<details>
+<summary><b>Answer</b></summary>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">addMarker</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">doyouspeakenglishfluently</span> <span class="o">==</span> <span class="s2">&quot;Yes&quot;</span><span class="p">){</span>
+        <span class="nx">L</span><span class="p">.</span><span class="nx">marker</span><span class="p">([</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">]).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">).</span><span class="nx">bindPopup</span><span class="p">(</span><span class="sb">`&lt;h2&gt;Speaks English fluently&lt;/h2&gt;`</span><span class="p">)</span>
+        <span class="nx">createButtons</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">location</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+        <span class="nx">L</span><span class="p">.</span><span class="nx">marker</span><span class="p">([</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">]).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">).</span><span class="nx">bindPopup</span><span class="p">(</span><span class="sb">`&lt;h2&gt;Speak other languages&lt;/h2&gt;`</span><span class="p">)</span>
+        <span class="nx">createButtons</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">location</span><span class="p">)</span>   
+        <span class="c1">// Bonus:    </span>
+        <span class="c1">// speakOtherLanguage += 1</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">data</span><span class="p">.</span><span class="nx">timestamp</span>
+<span class="p">}</span>
+<span class="c1">// let speakOtherLanguage = 0</span>
+<span class="c1">//window.onload = function afterWebPageLoad() { </span>
+    <span class="c1">//document.body.append(&quot;Number of hidden records:&quot;+speakOtherLanguage)</span>
+</code></pre></div>
+</td></tr></table>
+</details>
+
+<h2 id="leaflet-featuregroups">Leaflet <code>featureGroups</code><a class="headerlink" href="#leaflet-featuregroups" title="Permanent link">&para;</a></h2>
+<p>A <code>feature group</code>, which is Leaflet&rsquo;s container for dealing with multiple groups of data layers.</p>
+<p>In our <code>js/init.js</code> file we will add some variables to store our groups in: 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">speakFluentEnglish</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">featureGroup</span><span class="p">();</span>
+<span class="kd">let</span> <span class="nx">speakOtherLanguage</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">featureGroup</span><span class="p">();</span>
+</code></pre></div>
+</td></tr></table>
+ Important!!! These variables have to be OUTSIDE the function, because <code>Leaflet</code> needs to be able to use them. A variable outside of a function is said to be in the <code>global scope</code>.</p>
+<p>Next we will need to change our <code>addMarker</code> function to add each marker to their respective groups instead of just directly onto the map:</p>
+<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// our Leaflet feature group layers waiting for content!</span>
+<span class="kd">let</span> <span class="nx">speakFluentEnglish</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">featureGroup</span><span class="p">();</span>
+<span class="kd">let</span> <span class="nx">speakOtherLanguage</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">featureGroup</span><span class="p">();</span>
+
+<span class="kd">function</span> <span class="nx">addMarker</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">doyouspeakenglishfluently</span> <span class="o">==</span> <span class="s2">&quot;Yes&quot;</span><span class="p">){</span>
+        <span class="nx">speakFluentEnglish</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">L</span><span class="p">.</span><span class="nx">marker</span><span class="p">([</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">]).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">).</span><span class="nx">bindPopup</span><span class="p">(</span><span class="sb">`&lt;h2&gt;Speak English fluently&lt;/h2&gt;`</span><span class="p">))</span>
+        <span class="nx">createButtons</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">location</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+        <span class="nx">speakOtherLanguage</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">L</span><span class="p">.</span><span class="nx">marker</span><span class="p">([</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">]).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">).</span><span class="nx">bindPopup</span><span class="p">(</span><span class="sb">`&lt;h2&gt;Speak other languages&lt;/h2&gt;`</span><span class="p">))</span>
+        <span class="nx">createButtons</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">location</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">data</span><span class="p">.</span><span class="nx">timestamp</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+Awesome! Now let&rsquo;s see our beautiful layers!</p>
+<p>We also need to delete the line <code>.addTo(map)</code> after each marker, because we will add the <code>featureGroup</code> to the map instead of individual markers:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// our Leaflet feature group layers waiting for content!</span>
+<span class="kd">let</span> <span class="nx">speakFluentEnglish</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">featureGroup</span><span class="p">();</span>
+<span class="kd">let</span> <span class="nx">speakOtherLanguage</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">featureGroup</span><span class="p">();</span>
+
+<span class="kd">function</span> <span class="nx">addMarker</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">doyouspeakenglishfluently</span> <span class="o">==</span> <span class="s2">&quot;Yes&quot;</span><span class="p">){</span>
+        <span class="nx">speakFluentEnglish</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">L</span><span class="p">.</span><span class="nx">marker</span><span class="p">([</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">]).</span><span class="nx">bindPopup</span><span class="p">(</span><span class="sb">`&lt;h2&gt;Speak English fluently&lt;/h2&gt;`</span><span class="p">))</span>
+        <span class="nx">createButtons</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">location</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+        <span class="nx">speakOtherLanguage</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">L</span><span class="p">.</span><span class="nx">marker</span><span class="p">([</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">]).</span><span class="nx">bindPopup</span><span class="p">(</span><span class="sb">`&lt;h2&gt;Speak other languages&lt;/h2&gt;`</span><span class="p">))</span>
+        <span class="nx">createButtons</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">location</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">data</span><span class="p">.</span><span class="nx">timestamp</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<p>Wait&hellip; our markers dispearred after we did that, why?</p>
+<details>
+<summary><b>Answer</b></summary>
+Since we removed `addTo(map)`, we now need to add the `group layers` to to map!!
+</details>
+
+<h4 id="adding-our-group-layers-to-the-leaflet-map">Adding our <code>group layers</code> to the <code>Leaflet</code> map<a class="headerlink" href="#adding-our-group-layers-to-the-leaflet-map" title="Permanent link">&para;</a></h4>
+<p>As alluded to in the answer above, we need to add the groupped layers to our Leaflet map. To do so, we need to add this code somewhere:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nx">speakFluentEnglish</span><span class="p">.</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">)</span>
+<span class="nx">speakOtherLanguage</span><span class="p">.</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<p>But where?</p>
+<p>If you answered, at the end of the <code>formatData</code> function, you are correct (and sneaky if you read ahead during the lab!)!</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">formatData</span><span class="p">(</span><span class="nx">theData</span><span class="p">){</span>
+        <span class="kd">const</span> <span class="nx">formattedData</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="kd">const</span> <span class="nx">rows</span> <span class="o">=</span> <span class="nx">theData</span><span class="p">.</span><span class="nx">feed</span><span class="p">.</span><span class="nx">entry</span>
+        <span class="k">for</span><span class="p">(</span><span class="kd">const</span> <span class="nx">row</span> <span class="k">of</span> <span class="nx">rows</span><span class="p">)</span> <span class="p">{</span>
+          <span class="kd">const</span> <span class="nx">formattedRow</span> <span class="o">=</span> <span class="p">{}</span>
+          <span class="k">for</span><span class="p">(</span><span class="kd">const</span> <span class="nx">key</span> <span class="ow">in</span> <span class="nx">row</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span><span class="p">(</span><span class="nx">key</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s2">&quot;gsx$&quot;</span><span class="p">))</span> <span class="p">{</span>
+                  <span class="nx">formattedRow</span><span class="p">[</span><span class="nx">key</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s2">&quot;gsx$&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="nx">row</span><span class="p">[</span><span class="nx">key</span><span class="p">].</span><span class="nx">$t</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+          <span class="nx">formattedData</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">formattedRow</span><span class="p">)</span>
+        <span class="p">}</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">formattedData</span><span class="p">)</span>
+        <span class="nx">formattedData</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">addMarker</span><span class="p">)</span>
+        <span class="nx">speakFluentEnglish</span><span class="p">.</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">)</span> <span class="c1">// add our layers after markers have been made</span>
+        <span class="nx">speakOtherLanguage</span><span class="p">.</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">)</span> <span class="c1">// add our layers after markers have been made  </span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<h4 id="why">Why?<a class="headerlink" href="#why" title="Permanent link">&para;</a></h4>
+<p>We have to add our layers after the <code>forEach</code> loop finishes, otherwise the code will run only for the first marker.</p>
+<h3 id="layer-controls">Layer Controls<a class="headerlink" href="#layer-controls" title="Permanent link">&para;</a></h3>
+<p>One big benefit of using Leaflet FeatureGroups is that we can add <code>controls</code> to the map which allows us to turn on and off layers.</p>
+<p>Let&rsquo;s add our list of layers as an <code>object</code>:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// define layers</span>
+<span class="kd">let</span> <span class="nx">layers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Speaks English&quot;</span><span class="o">:</span> <span class="nx">speakFluentEnglish</span><span class="p">,</span>
+    <span class="s2">&quot;Speaks Other Languages&quot;</span><span class="o">:</span> <span class="nx">speakOtherLanguage</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+The first property name is our <code>alias</code> or what the users will see, and the property key is the Leaflet <code>FeatureGroup</code> that we created earlier.</p>
+<p>Next we will add a Leaflet <code>controlGroup</code>:</p>
+<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// add layer control box</span>
+<span class="nx">L</span><span class="p">.</span><span class="nx">control</span><span class="p">.</span><span class="nx">layers</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span><span class="nx">layers</span><span class="p">).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+You can actually turn on and off layers using buttons outside of Leaflet controls by creating a function to add and remove layers.</p>
+<p>We can also add a <code>fitBounds</code> to our layers to make sure our map zooms into our layer:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// make the map zoom to the extent of markers</span>
+<span class="nx">map</span><span class="p">.</span><span class="nx">fitBounds</span><span class="p">(</span><span class="nx">speakOtherLanguage</span><span class="p">.</span><span class="nx">getBounds</span><span class="p">());</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>Hmm, that only works for one layer group, so let&rsquo;s create a new feature group that contains all of our layers:</p>
+<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">allLayers</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">featureGroup</span><span class="p">([</span><span class="nx">speakFluentEnglish</span><span class="p">,</span><span class="nx">speakOtherLanguage</span><span class="p">]);</span>
+<span class="nx">map</span><span class="p">.</span><span class="nx">fitBounds</span><span class="p">(</span><span class="nx">allLayers</span><span class="p">.</span><span class="nx">getBounds</span><span class="p">());</span>     
+</code></pre></div>
+</td></tr></table>
+That code should go at the end of our <code>formatData</code> function so it fits all of our layers and markers.</p>
+<p>Our <code>formatData</code> function should look like the following:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">formatData</span><span class="p">(</span><span class="nx">theData</span><span class="p">){</span>
+        <span class="kd">const</span> <span class="nx">formattedData</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="kd">const</span> <span class="nx">rows</span> <span class="o">=</span> <span class="nx">theData</span><span class="p">.</span><span class="nx">feed</span><span class="p">.</span><span class="nx">entry</span>
+        <span class="k">for</span><span class="p">(</span><span class="kd">const</span> <span class="nx">row</span> <span class="k">of</span> <span class="nx">rows</span><span class="p">)</span> <span class="p">{</span>
+          <span class="kd">const</span> <span class="nx">formattedRow</span> <span class="o">=</span> <span class="p">{}</span>
+          <span class="k">for</span><span class="p">(</span><span class="kd">const</span> <span class="nx">key</span> <span class="ow">in</span> <span class="nx">row</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span><span class="p">(</span><span class="nx">key</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s2">&quot;gsx$&quot;</span><span class="p">))</span> <span class="p">{</span>
+                  <span class="nx">formattedRow</span><span class="p">[</span><span class="nx">key</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s2">&quot;gsx$&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="nx">row</span><span class="p">[</span><span class="nx">key</span><span class="p">].</span><span class="nx">$t</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+          <span class="nx">formattedData</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">formattedRow</span><span class="p">)</span>
+        <span class="p">}</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">formattedData</span><span class="p">)</span>
+        <span class="nx">formattedData</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">addMarker</span><span class="p">)</span>
+        <span class="nx">speakFluentEnglish</span><span class="p">.</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">)</span> <span class="c1">// add our layers after markers have been made</span>
+        <span class="nx">speakOtherLanguage</span><span class="p">.</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">)</span> <span class="c1">// add our layers after markers have been made  </span>
+        <span class="kd">let</span> <span class="nx">allLayers</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">featureGroup</span><span class="p">([</span><span class="nx">speakFluentEnglish</span><span class="p">,</span><span class="nx">speakOtherLanguage</span><span class="p">]);</span>
+        <span class="nx">map</span><span class="p">.</span><span class="nx">fitBounds</span><span class="p">(</span><span class="nx">allLayers</span><span class="p">.</span><span class="nx">getBounds</span><span class="p">());</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="refactoring">Refactoring<a class="headerlink" href="#refactoring" title="Permanent link">&para;</a></h3>
+<p>Do you think there&rsquo;s a better way for us to create the feature groups instead of adding all this code in our <code>formatData</code> function?</p>
+<details>
+<summary><b>Answer</b></summary>
+Yes, we should make a function to add each of the layers!
+</details>
+
+<p>Due to lack of time, we won&rsquo;t do any refactoring, so for now we will leave the inefficient way of repeating ourselves with the various <code>featureGroups</code>. But we <strong>must</strong> <strong><code>refactor</code></strong> our code if we want to add our own buttons to interact with the map instead of using the default Leaflet <code>control</code> functions.</p>
+<h4 id="what-is-refactoring">What is refactoring?<a class="headerlink" href="#what-is-refactoring" title="Permanent link">&para;</a></h4>
+<p>Refactoring code is means improving code so that it is easier to understand and easier to reuse. Refactoring is important because the less we repeat ourselves or hardcode things the less mistakes our code will have when we modify it.</p>
+<details>
+<summary><b>How would you refactor this code?</b></summary>
+To refactor the `group layers` code you want to do the following:
+
+1. Create an array of `layers`
+2. Create a new `function` that adds layers to the map
+3. Add the markers before the `if` statments and only change what needs to be altered in the pop-ups depending on the field.
+4. Finally, use a `forEach` method that calls our new function  
+</details>
+
+<p>Now that we have the pop-up change based on our fields, let&rsquo;s actually change how the marker looks!</p>
+<h2 id="time-to-leaflet-the-markers-go-and-use-circlemarkers">Time to Leaflet the <code>markers</code> go, and use <code>circleMarkers!</code>:<a class="headerlink" href="#time-to-leaflet-the-markers-go-and-use-circlemarkers" title="Permanent link">&para;</a></h2>
+<p>The <code>blue</code> Leaflet markers are pretty iconic to us now (pun intended). While we can change the markers to other icons, instead we will use <code>circle markers</code> because this allows us to have nice colorful markers without finding icons.</p>
+<h4 id="adding-circlemarkers">Adding circleMarkers<a class="headerlink" href="#adding-circlemarkers" title="Permanent link">&para;</a></h4>
+<p>The format for adding <code>circleMarkers</code> in <code>Leaflet</code> looks like this:</p>
+<p><code>L.circleMarker(&lt;LatLng&gt;, &lt;CircleMarker options&gt;)</code></p>
+<p>The <code>latlng</code> is pretty familiar now, but the options for circleMarkers are a bit unexplored.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">circleOptions</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">radius</span><span class="o">:</span> <span class="mf">4</span><span class="p">,</span>
+    <span class="nx">fillColor</span><span class="o">:</span> <span class="s2">&quot;#ff7800&quot;</span><span class="p">,</span>
+    <span class="nx">color</span><span class="o">:</span> <span class="s2">&quot;#000&quot;</span><span class="p">,</span>
+    <span class="nx">weight</span><span class="o">:</span> <span class="mf">1</span><span class="p">,</span>
+    <span class="nx">opacity</span><span class="o">:</span> <span class="mf">1</span><span class="p">,</span>
+    <span class="nx">fillOpacity</span><span class="o">:</span> <span class="mf">0.8</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>Add the above <code>circleOptions</code> above our <code>addMarker</code> function and change the <code>marker</code> to <code>circleMarker</code> as follows:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">circleOptions</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">radius</span><span class="o">:</span> <span class="mf">4</span><span class="p">,</span>
+    <span class="nx">fillColor</span><span class="o">:</span> <span class="s2">&quot;#ff7800&quot;</span><span class="p">,</span>
+    <span class="nx">color</span><span class="o">:</span> <span class="s2">&quot;#000&quot;</span><span class="p">,</span>
+    <span class="nx">weight</span><span class="o">:</span> <span class="mf">1</span><span class="p">,</span>
+    <span class="nx">opacity</span><span class="o">:</span> <span class="mf">1</span><span class="p">,</span>
+    <span class="nx">fillOpacity</span><span class="o">:</span> <span class="mf">0.8</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">addMarker</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">doyouspeakenglishfluently</span> <span class="o">==</span> <span class="s2">&quot;Yes&quot;</span><span class="p">){</span>
+        <span class="nx">speakFluentEnglish</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">L</span><span class="p">.</span><span class="nx">circleMarker</span><span class="p">([</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">],</span><span class="nx">circleOptions</span><span class="p">).</span><span class="nx">bindPopup</span><span class="p">(</span><span class="sb">`&lt;h2&gt;Speak English fluently&lt;/h2&gt;`</span><span class="p">))</span>
+        <span class="nx">createButtons</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">location</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+        <span class="nx">speakOtherLanguage</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">L</span><span class="p">.</span><span class="nx">circleMarker</span><span class="p">([</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">],</span><span class="nx">circleOptions</span><span class="p">).</span><span class="nx">bindPopup</span><span class="p">(</span><span class="sb">`&lt;h2&gt;Speak other languages&lt;/h2&gt;`</span><span class="p">))</span>
+        <span class="nx">createButtons</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">location</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">data</span><span class="p">.</span><span class="nx">timestamp</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+Awesome! We got <code>circleMarkers</code>! But wait.. They are all the same..</p>
+<p>Now this is where we need to:
+1. Be intentional in our design and choose colors to represent well.
+2. Change the colors based on our <code>if-else</code> statement</p>
+<p>Let&rsquo;s make <code>green</code> for <code>Yes</code> and <code>red</code> for <code>No</code>.</p>
+<p>Since <code>circleOptions</code> is an object, we can change it&rsquo;s property value for <code>fillColor</code> when we are in the <code>if-else</code> statement.</p>
+<p>This should go in the <code>if(data.doyouspeakenglishfluently == "Yes")</code> scope:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nx">circleOptions</span><span class="p">.</span><span class="nx">fillColor</span> <span class="o">=</span> <span class="s2">&quot;green&quot;</span>
+</code></pre></div>
+</td></tr></table>
+And this should go in the <code>else</code> scope:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nx">circleOptions</span><span class="p">.</span><span class="nx">color</span> <span class="o">=</span> <span class="s2">&quot;red&quot;</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>Your final colorful <code>addMarker</code> function should look like this:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">addMarker</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">doyouspeakenglishfluently</span> <span class="o">==</span> <span class="s2">&quot;Yes&quot;</span><span class="p">){</span>
+        <span class="nx">exampleOptions</span><span class="p">.</span><span class="nx">fillColor</span> <span class="o">=</span> <span class="s2">&quot;green&quot;</span>
+        <span class="nx">speakFluentEnglish</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">L</span><span class="p">.</span><span class="nx">circleMarker</span><span class="p">([</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">],</span><span class="nx">exampleOptions</span><span class="p">).</span><span class="nx">bindPopup</span><span class="p">(</span><span class="sb">`&lt;h2&gt;Speak English fluently&lt;/h2&gt;`</span><span class="p">))</span>
+        <span class="nx">createButtons</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">location</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+        <span class="nx">speakOtherLanguage</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">L</span><span class="p">.</span><span class="nx">circleMarker</span><span class="p">([</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">],</span><span class="nx">exampleOptions</span><span class="p">).</span><span class="nx">bindPopup</span><span class="p">(</span><span class="sb">`&lt;h2&gt;Speak other languages&lt;/h2&gt;`</span><span class="p">))</span>
+        <span class="nx">createButtons</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">location</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">data</span><span class="p">.</span><span class="nx">timestamp</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>Phew! That was a lot to go over! But now you should take sometime to think about the design choices we have to make as map makers. One important consideration is deciding on which basemap to use.</p>
+<p>Recall the code here:</p>
+<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nx">L</span><span class="p">.</span><span class="nx">tileLayer</span><span class="p">(</span><span class="s1">&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">attribution</span><span class="o">:</span> <span class="s1">&#39;&amp;copy; &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#39;</span>
+<span class="p">}).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">);</span>
+</code></pre></div>
+</td></tr></table>
+Go to:
+- <a href="https://leaflet-extras.github.io/leaflet-providers/preview/">https://leaflet-extras.github.io/leaflet-providers/preview/</a>
+And pick a basemap that you like, a simple basemap with few colors is always preferred over a <strong>busy</strong> basemap:</p>
+<p><strong>Busy</strong></p>
+<p><img alt="" src="../media/busy.png" /></p>
+<p><strong>Less busy</strong></p>
+<p><img alt="" src="./media/lessbusy.png" /></p>
+<p>Click on the basemap you prefer:</p>
+<p><img alt="" src="../media/pick.png" /></p>
+<p>Copy the <code>plain JavaScript</code> in the middle:
+<img alt="" src="../media/copy.png" /></p>
+<p>And put the code after <code>map</code> in your <code>js/init.js</code> file:</p>
+<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">map</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s1">&#39;map&#39;</span><span class="p">).</span><span class="nx">setView</span><span class="p">([</span><span class="mf">34.0709</span><span class="p">,</span> <span class="o">-</span><span class="mf">118.444</span><span class="p">],</span> <span class="mf">5</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">&quot;https://spreadsheets.google.com/feeds/list/1upD99bKWIO68jL8MKWV67KE-_H_TVn2bCwqyQkqNsBw/oxw5dh3/public/values?alt=json&quot;</span>
+
+<span class="kd">let</span> <span class="nx">Esri_WorldGrayCanvas</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">tileLayer</span><span class="p">(</span><span class="s1">&#39;https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">attribution</span><span class="o">:</span> <span class="s1">&#39;Tiles &amp;copy; Esri &amp;mdash; Esri, DeLorme, NAVTEQ&#39;</span><span class="p">,</span>
+    <span class="nx">maxZoom</span><span class="o">:</span> <span class="mf">16</span>
+<span class="p">});</span>
+
+<span class="nx">Esri_WorldGrayCanvas</span><span class="p">.</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">)</span>
+
+<span class="nx">L</span><span class="p">.</span><span class="nx">tileLayer</span><span class="p">(</span><span class="s1">&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">attribution</span><span class="o">:</span> <span class="s1">&#39;&amp;copy; &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#39;</span>
+<span class="p">}).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">);</span>
+</code></pre></div>
+</td></tr></table>
+Change the <code>var</code> to <code>let</code> and be sure to add the <code>variable</code> to your map, like so:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">map</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s1">&#39;map&#39;</span><span class="p">).</span><span class="nx">setView</span><span class="p">([</span><span class="mf">34.0709</span><span class="p">,</span> <span class="o">-</span><span class="mf">118.444</span><span class="p">],</span> <span class="mf">5</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">&quot;https://spreadsheets.google.com/feeds/list/1upD99bKWIO68jL8MKWV67KE-_H_TVn2bCwqyQkqNsBw/oxw5dh3/public/values?alt=json&quot;</span>
+
+<span class="kd">let</span> <span class="nx">Esri_WorldGrayCanvas</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">tileLayer</span><span class="p">(</span><span class="s1">&#39;https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">attribution</span><span class="o">:</span> <span class="s1">&#39;Tiles &amp;copy; Esri &amp;mdash; Esri, DeLorme, NAVTEQ&#39;</span><span class="p">,</span>
+    <span class="nx">maxZoom</span><span class="o">:</span> <span class="mf">16</span>
+<span class="p">});</span>
+
+<span class="nx">Esri_WorldGrayCanvas</span><span class="p">.</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">)</span>
+
+<span class="c1">// L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {</span>
+<span class="c1">//     attribution: &#39;&amp;copy; &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#39;</span>
+<span class="c1">// }).addTo(map);</span>
+</code></pre></div>
+</td></tr></table>
+Be sure to delete or comment out the other basemap, as you don&rsquo;t need two basemaps!</p>
+<h4 id="final-code">Final Code<a class="headerlink" href="#final-code" title="Permanent link">&para;</a></h4>
+<p>Your final code should look like the following:</p>
+<blockquote>
+<p>index.html
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>COVID-19 Vaccination Stories<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;shortcut icon&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;styles/style.css&quot;</span><span class="p">&gt;</span>
+
+        <span class="cm">&lt;!-- Leaflet&#39;s css--&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://unpkg.com/leaflet@1.7.1/dist/leaflet.css&quot;</span> <span class="p">/&gt;</span>
+
+        <span class="cm">&lt;!-- Leaflet&#39;s JavaScript--&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://unpkg.com/leaflet@1.7.1/dist/leaflet.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+     <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>Welcome to COVID-19 Vaccination Stories<span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;contents&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;map&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;survey&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://docs.google.com/forms/d/e/1FAIpQLSdqVT10bEbUrULMu6Etwj4ZBXGf-LAxcKohAINFbIdZmHS6OA/viewform?embedded=true&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;640&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;654&quot;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">marginheight</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">marginwidth</span><span class="o">=</span><span class="s">&quot;0&quot;</span><span class="p">&gt;</span>Loading…<span class="p">&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/init.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+styles/style.css
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">body</span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">;</span><span class="w"> </span>
+<span class="w">    </span><span class="k">grid-auto-rows</span><span class="p">:</span><span class="w"> </span><span class="nf">minmax</span><span class="p">(</span><span class="mi">5</span><span class="kt">px</span><span class="p">,</span><span class="w"> </span><span class="kc">auto</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-template-areas</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;header header&quot;</span><span class="w"> </span><span class="s2">&quot;mappanel sidebar&quot;</span><span class="w"> </span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="nt">header</span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">header</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="p">#</span><span class="nn">map</span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="mi">90</span><span class="kt">vh</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">mappanel</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"> </span>
+
+<span class="p">#</span><span class="nn">contents</span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">sidebar</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="k">grid</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="nf">repeat</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c">/* fix for survey to fit in the iframe */</span><span class="w"></span>
+<span class="p">#</span><span class="nn">survey</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">overflow</span><span class="p">:</span><span class="w"> </span><span class="kc">hidden</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="c">/* 16:9 aspect ratio */</span><span class="w"></span>
+<span class="w">    </span><span class="k">padding-top</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">relative</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="p">#</span><span class="nn">survey</span><span class="w"> </span><span class="nt">iframe</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">absolute</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table></p>
+<p>js/init.js
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span>
+<span class="normal">90</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">map</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s1">&#39;map&#39;</span><span class="p">).</span><span class="nx">setView</span><span class="p">([</span><span class="mf">34.0709</span><span class="p">,</span> <span class="o">-</span><span class="mf">118.444</span><span class="p">],</span> <span class="mf">5</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">&quot;https://spreadsheets.google.com/feeds/list/1upD99bKWIO68jL8MKWV67KE-_H_TVn2bCwqyQkqNsBw/oxw5dh3/public/values?alt=json&quot;</span>
+
+<span class="kd">let</span> <span class="nx">Esri_WorldGrayCanvas</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">tileLayer</span><span class="p">(</span><span class="s1">&#39;https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">attribution</span><span class="o">:</span> <span class="s1">&#39;Tiles &amp;copy; Esri &amp;mdash; Esri, DeLorme, NAVTEQ&#39;</span><span class="p">,</span>
+    <span class="nx">maxZoom</span><span class="o">:</span> <span class="mf">16</span>
+<span class="p">});</span>
+
+<span class="nx">Esri_WorldGrayCanvas</span><span class="p">.</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">)</span>
+
+<span class="c1">// L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {</span>
+<span class="c1">//     attribution: &#39;&amp;copy; &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#39;</span>
+<span class="c1">// }).addTo(map);</span>
+
+<span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+        <span class="p">})</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;{</span>
+                <span class="c1">// console.log(data)</span>
+                <span class="nx">formatData</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>
+        <span class="p">}</span>
+<span class="p">)</span>
+
+<span class="kd">let</span> <span class="nx">speakFluentEnglish</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">featureGroup</span><span class="p">();</span>
+<span class="kd">let</span> <span class="nx">speakOtherLanguage</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">featureGroup</span><span class="p">();</span>
+
+<span class="kd">let</span> <span class="nx">exampleOptions</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">radius</span><span class="o">:</span> <span class="mf">4</span><span class="p">,</span>
+    <span class="nx">fillColor</span><span class="o">:</span> <span class="s2">&quot;#ff7800&quot;</span><span class="p">,</span>
+    <span class="nx">color</span><span class="o">:</span> <span class="s2">&quot;#000&quot;</span><span class="p">,</span>
+    <span class="nx">weight</span><span class="o">:</span> <span class="mf">1</span><span class="p">,</span>
+    <span class="nx">opacity</span><span class="o">:</span> <span class="mf">1</span><span class="p">,</span>
+    <span class="nx">fillOpacity</span><span class="o">:</span> <span class="mf">0.8</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">addMarker</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">doyouspeakenglishfluently</span> <span class="o">==</span> <span class="s2">&quot;Yes&quot;</span><span class="p">){</span>
+        <span class="nx">exampleOptions</span><span class="p">.</span><span class="nx">fillColor</span> <span class="o">=</span> <span class="s2">&quot;green&quot;</span>
+        <span class="nx">speakFluentEnglish</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">L</span><span class="p">.</span><span class="nx">circleMarker</span><span class="p">([</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">],</span><span class="nx">exampleOptions</span><span class="p">).</span><span class="nx">bindPopup</span><span class="p">(</span><span class="sb">`&lt;h2&gt;Speak English fluently&lt;/h2&gt;`</span><span class="p">))</span>
+        <span class="nx">createButtons</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">location</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+        <span class="nx">exampleOptions</span><span class="p">.</span><span class="nx">fillColor</span> <span class="o">=</span> <span class="s2">&quot;red&quot;</span>
+        <span class="nx">speakOtherLanguage</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">L</span><span class="p">.</span><span class="nx">circleMarker</span><span class="p">([</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">],</span><span class="nx">exampleOptions</span><span class="p">).</span><span class="nx">bindPopup</span><span class="p">(</span><span class="sb">`&lt;h2&gt;Speak other languages&lt;/h2&gt;`</span><span class="p">))</span>
+        <span class="nx">createButtons</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">lat</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">lng</span><span class="p">,</span><span class="nx">data</span><span class="p">.</span><span class="nx">location</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">data</span><span class="p">.</span><span class="nx">timestamp</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">createButtons</span><span class="p">(</span><span class="nx">lat</span><span class="p">,</span><span class="nx">lng</span><span class="p">,</span><span class="nx">title</span><span class="p">){</span>
+    <span class="kd">const</span> <span class="nx">newButton</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;button&quot;</span><span class="p">);</span>
+    <span class="nx">newButton</span><span class="p">.</span><span class="nx">id</span> <span class="o">=</span> <span class="s2">&quot;button&quot;</span><span class="o">+</span><span class="nx">title</span><span class="p">;</span>
+    <span class="nx">newButton</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">title</span><span class="p">;</span>
+    <span class="nx">newButton</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span><span class="nx">lat</span><span class="p">);</span> 
+    <span class="nx">newButton</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;lng&quot;</span><span class="p">,</span><span class="nx">lng</span><span class="p">);</span>
+    <span class="nx">newButton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+        <span class="nx">map</span><span class="p">.</span><span class="nx">flyTo</span><span class="p">([</span><span class="nx">lat</span><span class="p">,</span><span class="nx">lng</span><span class="p">]);</span>
+    <span class="p">})</span>
+    <span class="kd">const</span> <span class="nx">spaceForButtons</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;contents&#39;</span><span class="p">)</span>
+    <span class="nx">spaceForButtons</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newButton</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">formatData</span><span class="p">(</span><span class="nx">theData</span><span class="p">){</span>
+        <span class="kd">const</span> <span class="nx">formattedData</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="kd">const</span> <span class="nx">rows</span> <span class="o">=</span> <span class="nx">theData</span><span class="p">.</span><span class="nx">feed</span><span class="p">.</span><span class="nx">entry</span>
+        <span class="k">for</span><span class="p">(</span><span class="kd">const</span> <span class="nx">row</span> <span class="k">of</span> <span class="nx">rows</span><span class="p">)</span> <span class="p">{</span>
+          <span class="kd">const</span> <span class="nx">formattedRow</span> <span class="o">=</span> <span class="p">{}</span>
+          <span class="k">for</span><span class="p">(</span><span class="kd">const</span> <span class="nx">key</span> <span class="ow">in</span> <span class="nx">row</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span><span class="p">(</span><span class="nx">key</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s2">&quot;gsx$&quot;</span><span class="p">))</span> <span class="p">{</span>
+                  <span class="nx">formattedRow</span><span class="p">[</span><span class="nx">key</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s2">&quot;gsx$&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="nx">row</span><span class="p">[</span><span class="nx">key</span><span class="p">].</span><span class="nx">$t</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+          <span class="nx">formattedData</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">formattedRow</span><span class="p">)</span>
+        <span class="p">}</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">formattedData</span><span class="p">)</span>
+        <span class="nx">formattedData</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">addMarker</span><span class="p">)</span>
+        <span class="nx">speakFluentEnglish</span><span class="p">.</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">)</span>
+        <span class="nx">speakOtherLanguage</span><span class="p">.</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">)</span>
+        <span class="kd">let</span> <span class="nx">allLayers</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">featureGroup</span><span class="p">([</span><span class="nx">speakFluentEnglish</span><span class="p">,</span><span class="nx">speakOtherLanguage</span><span class="p">]);</span>
+        <span class="nx">map</span><span class="p">.</span><span class="nx">fitBounds</span><span class="p">(</span><span class="nx">allLayers</span><span class="p">.</span><span class="nx">getBounds</span><span class="p">());</span>        
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">layers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Speaks English&quot;</span><span class="o">:</span> <span class="nx">speakFluentEnglish</span><span class="p">,</span>
+    <span class="s2">&quot;Speaks Other Languages&quot;</span><span class="o">:</span> <span class="nx">speakOtherLanguage</span>
+<span class="p">}</span>
+
+<span class="nx">L</span><span class="p">.</span><span class="nx">control</span><span class="p">.</span><span class="nx">layers</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span><span class="nx">layers</span><span class="p">).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table></p>
+</blockquote>
+<p>Alright! Now you should be ready to take on the lab assignment for the week!</p>
+<h2 id="lab-assignment-6-conditional-visual-importance">Lab Assignment #6 - Conditional Visual Importance<a class="headerlink" href="#lab-assignment-6-conditional-visual-importance" title="Permanent link">&para;</a></h2>
+<h3 id="due-520">Due 5/20<a class="headerlink" href="#due-520" title="Permanent link">&para;</a></h3>
+<p>Using your assignment from <code>week 6</code>, categorize your survey data to convey a message or theme about your map.</p>
+<p>The requirements are:
+- Use at least 2 different <a href="https://leafletjs.com/reference.html#FeatureGroup">layer groups</a>.
+- Use a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">conditional <code>if-else</code> statement</a>
+- Customize Leaflet&rsquo;s <a href="https://leafletjs.com/reference-1.7.1.html#circlemarker"><code>circle markers</code></a>
+- Add a title or a explanation that describes what is being shown</p>
+<h2 id="submission">Submission<a class="headerlink" href="#submission" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Commit your changes to GitHub</li>
+<li>Find your <code>index.html</code> in the <code>Week_07</code> folder and copy the URL. It should look something like this:</li>
+<li><a href="https://albertkun.github.io/21S-ASIAAM-191A-Assignments/Week_07/index.html">https://albertkun.github.io/21S-ASIAAM-191A-Assignments/Week_07/index.html</a></li>
+<li>Paste your link as a comment in the Discussion forum for Lab Assignment #6: </li>
+<li><a href="https://github.com/albertkun/21S-ASIAAM-191A/discussions/148">https://github.com/albertkun/21S-ASIAAM-191A/discussions/148</a></li>
+</ul>
+
+
+
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2022-01-25
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-top--hidden md-icon" data-md-component="top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Footer -->
+<footer class="md-footer">
+<div class="md-footer-nav" >
+  <!-- Link to previous and/or next page -->
+  
+    <nav
+      class="md-footer__inner md-grid"
+      aria-label="Footer"
+    >
+
+      <!-- Link to previous page -->
+      
+        
+        <a
+          href="../lab_assignment/"
+          class="md-footer__link md-footer__link--prev"
+          aria-label="Previous: Lab Assignment #6 - Conditional Visual Importance"
+          rel="prev"
+        >
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Lab Assignment #6 - Conditional Visual Importance
+            </div>
+          </div>
+        </a>
+      
+
+      <!-- Link to next page -->
+      
+        
+        <a
+          href="../../../week_08/readme/"
+          class="md-footer__link md-footer__link--next"
+          aria-label="Next: Week 8 - Collaboration and mentoring for social change"
+          rel="next"
+        >
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Week 8 - Collaboration and mentoring for social change
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+</div>
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a
+          href="https://squidfunk.github.io/mkdocs-material/"
+          target="_blank" rel="noopener"
+        >
+          Material for MkDocs
+        </a>
+        
+      </div>
+
+      <!-- Social links -->
+      <div class="md-social">
+  
+</div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "content.code.annotate", "search.highlight", "toc.integrate", "navigation.indexes", "navigation.top", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.f7fe2898.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.03f8e4a4.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+      
+        <script src="../../../etc/js/tables.js"></script>
+      
+        <script src="../../../etc/js/extra.js"></script>
+      
+    
+  </body>
+</html>
