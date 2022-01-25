@@ -31,13 +31,14 @@ theme:
       - toc.integrate
       - navigation.indexes
       - navigation.top
+      - search.suggest
       
   icon:
     repo: fontawesome/brands/github
 
 markdown_extensions:
-    # - pymdownx.highlight:
-    #     linenums: true
+    - pymdownx.highlight:
+        linenums: true
     - pymdownx.superfences
     - pymdownx.magiclink
     - smarty
@@ -63,13 +64,14 @@ plugins:
   - autorefs
   - table-reader
   - macros
+  - tags
   - search:
       lang: en
   # - htmlproofer
       # raise_error: True
   - encryptcontent:
       title_prefix: '🔒'
-      # global_password: !ENV METRO_DOCS_PASS
+      # global_password: !ENV ASIA_191_PASS
       # password_button: True      
       encrypted_something:
           mkdocs-encrypted-toc: [nav, class]

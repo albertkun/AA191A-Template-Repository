@@ -6,16 +6,16 @@ This is the course material and syllabus for Asian American Studies 191A Web Dev
 
 Description|Link
 --|--
-Lab Assignments|[https://github.com/albertkun/21S-ASIAAM-191A-Assignments](https://github.com/albertkun/21S-ASIAAM-191A-Assignments)
-Git Practicing|[https://github.com/albertkun/21S-AA191-GitPracticing](https://github.com/albertkun/21S-AA191-GitPracticing)
+Course GitHub Repository|[https://github.com/albertkun/21S-ASIAAM-191A](https://github.com/albertkun/21S-ASIAAM-191A-Assignments)
 
 ## Class Details
-Asian American Studies Department, Summer Session A, 2021
+Asian American Studies Department, Spring, 2022
 
-Mondays, Wednesdays, and Fridays 1:00PM – 2:20PM
+TBD
+<!-- Mondays, Wednesdays 1:00PM – 2:20PM -->
 
 ### Instructor
-Albert Kochaphum (albertkun@oarc.ucla.edu)
+Albert Kochaphum (albertkun@ucla.edu)
 ### Office Hours
 [Thursdays 4pm – 5pm](https://moodle2.sscnet.ucla.edu/mod/zoom/view.php?id=710586) and by appointment below:
 - https://calendly.com/albertkun/office-hours
@@ -23,10 +23,10 @@ Albert Kochaphum (albertkun@oarc.ucla.edu)
 ## Preparation
 - Fill out the [pre-course survey](https://forms.gle/nifb6shCtFvEftZY7) before the first day of instruction.
 
-<!-- [Static Syllabus in PDF form](AAS-191A-SP21_Syllabus_2021.pdf) -->
+<!-- [Static Syllabus in PDF form](AAS-191A-SP22_Syllabus_2022.pdf) -->
 #### Please note: This syllabus is subject to change.
 
-[<img src=".\Guides\media\syllabus1.png" style="width:5.06944in;height:2.56289in" />](https://www.hatecrimemap.com)
+[<img src=".\media\syllabus1.png" style="width:5.06944in;height:2.56289in" />](https://www.hatecrimemap.com)
 
 (Lam, C., Kochaphum, A., UCLA [HateCrimeMap](https://www.hatecrimemap.com), 2020)
 
@@ -192,7 +192,7 @@ for academic honesty and integrity in your work.
 - Download and install [VS Code](https://code.visualstudio.com/)
 - Download and install [Firefox](https://www.firefox.com/)
 
-If you have any issues with installing the above, please do not hesitate to contact me at albertkun@oarc.ucla.edu.
+If you have any issues with installing the above, please do not hesitate to contact me at albertkun@ucla.edu.
 
 <table>
 <thead>
@@ -216,14 +216,26 @@ If you have any issues with installing the above, please do not hesitate to cont
 </tr>
 <tr class="even">
 <td>4</td>
-<td><strong>Designing for Civil Society</strong></td>
+<td><strong>Developing for Civil Society</strong></td>
 </tr>
 <tr class="odd">
 <td>5</td>
-<td><strong>Mentorship and Collaboration </strong></td>
+<td><strong>Society, Technology, and Ethics</strong></td>
 </tr>
 <tr class="odd">
 <td>6</td>
+<td><strong>Human-Centered Design</strong></td>
+</tr>
+<td>7</td>
+<td><strong>From Design to Data Justice</strong></td>
+</tr>
+<td>8</td>
+<td><strong>Mentorship and Collaboration</strong></td>
+</tr>
+<td>9</td>
+<td><strong>Connecting Activism and Technology</strong></td>
+</tr>
+<td>10</td>
 <td><strong>Beyond Web Development and Social Change</strong></td>
 </tr>
 <td>Finals</td>
