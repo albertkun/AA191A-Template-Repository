@@ -22,5 +22,5 @@ jobs:
       # - run: pip install mkdocs-material
       - run: mkdocs gh-deploy --force
 env:
-  GH_TOKEN: ${{secrets.ALBERT_KEY}}          
+  GH_TOKEN: ${{secrets.GH_TOKEN}}          
   ASIA_191_PASS: ${{secrets.ASIA_191_PASS}}
