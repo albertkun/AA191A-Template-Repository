@@ -13,7 +13,7 @@ jobs:
         with:
           python-version: 3.x
       # - run: pip install git+https://${GH_TOKEN}@github.com/LACMTA/mkdocs-material-insiders.git
-      - run: git clone --depth 1 git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+      - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
       - run: pip install -e mkdocs-material-insiders
       - run: pip install mkdocs-macros-plugin
       - run: pip install mkdocs-encryptcontent-plugin
